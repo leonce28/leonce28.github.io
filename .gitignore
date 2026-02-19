@@ -25,3 +25,10 @@ package-lock.json
 # Misc
 _sass/vendors
 assets/js/dist
+
+# Python
+__pycache__/
+*.pyc
+
+# News archive (raw markdown)
+news/
