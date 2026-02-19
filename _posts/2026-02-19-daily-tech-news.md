@@ -1,6 +1,6 @@
 ---
 title: "科技新闻日报 2026-02-19"
-date: 2026-02-19 15:18:42 +0800
+date: 2026-02-19 15:20:31 +0800
 categories: [News]
 tags: [news, daily-news]
 description: "每日自动抓取 Hacker News、36氪、InfoQ、少数派的热门科技新闻。"
@@ -20,7 +20,7 @@ sources:
 <ol>
 <li>
 <strong><a href="https://eutechmap.com/map" target="_blank" rel="noopener">European Tech Alternatives</a></strong>
-<br><span class="meta">149 pts | <a href="https://news.ycombinator.com/item?id=47070142" target="_blank">92 评论</a></span>
+<br><span class="meta">152 pts | <a href="https://news.ycombinator.com/item?id=47070142" target="_blank">95 评论</a></span>
 </li>
 <li>
 <strong><a href="https://pudding.cool/2026/02/womens-sizing/" target="_blank" rel="noopener">Sizing chaos</a></strong>
@@ -28,7 +28,7 @@ sources:
 </li>
 <li>
 <strong><a href="https://old.reddit.com/r/MacOS/comments/1r8900z/macos_which_officially_supports_27_year_old/" target="_blank" rel="noopener">27-year-old Apple iBooks can connect to Wi-Fi and download official updates</a></strong>
-<br><span class="meta">280 pts | <a href="https://news.ycombinator.com/item?id=47066241" target="_blank">143 评论</a></span>
+<br><span class="meta">281 pts | <a href="https://news.ycombinator.com/item?id=47066241" target="_blank">143 评论</a></span>
 </li>
 <li>
 <strong><a href="https://nicolasdickenmann.com/blog/the-great-fp64-divide.html" target="_blank" rel="noopener">15 years of FP64 segmentation, and why the Blackwell Ultra breaks the pattern</a></strong>
