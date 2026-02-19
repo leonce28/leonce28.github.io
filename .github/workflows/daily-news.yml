@@ -8,8 +8,12 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: daily-news
+  cancel-in-progress: false
+
 jobs:
-  fetch-and-deploy:
+  fetch-and-push:
     runs-on: ubuntu-latest
     
     steps:
@@ -32,10 +36,21 @@ jobs:
       - name: Fetch news
         run: python src/main.py
 
-      - name: Commit changes
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.has_changes == 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add .
-          git diff --quiet && git diff --staged --quiet || git commit -m "docs: add daily news $(date +'%Y-%m-%d')"
-          git push
+          git commit -m "docs: add daily news $(date +'%Y-%m-%d')"
+          git pull --rebase origin master
+          git push origin master

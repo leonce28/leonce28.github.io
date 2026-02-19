@@ -2,13 +2,13 @@ name: "Build and Deploy"
 on:
   push:
     branches:
-      - main
       - master
     paths-ignore:
       - .gitignore
       - README.md
       - LICENSE
       - src/
+      - review.md
 
   workflow_dispatch:
 

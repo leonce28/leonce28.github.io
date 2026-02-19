@@ -1,6 +1,6 @@
 ---
 title: "科技新闻日报 2026-02-19"
-date: 2026-02-19 14:13:22 +0800
+date: 2026-02-19 14:29:27 +0800
 categories: [News]
 tags: [news, daily-news]
 description: "每日自动抓取 Hacker News、36氪、InfoQ、少数派的热门科技新闻。"
@@ -22,43 +22,43 @@ sources:
 <ol>
 <li>
 <strong><a href="https://eutechmap.com/map" target="_blank" rel="noopener">European Tech Alternatives</a></strong>
-<br><span class="meta">58 pts | <a href="https://news.ycombinator.com/item?id=47070142" target="_blank">13 评论</a></span>
+<br><span class="meta">75 pts | <a href="https://news.ycombinator.com/item?id=47070142" target="_blank">29 评论</a></span>
 </li>
 <li>
 <strong><a href="https://pudding.cool/2026/02/womens-sizing/" target="_blank" rel="noopener">Sizing chaos</a></strong>
-<br><span class="meta">426 pts | <a href="https://news.ycombinator.com/item?id=47066552" target="_blank">220 评论</a></span>
+<br><span class="meta">434 pts | <a href="https://news.ycombinator.com/item?id=47066552" target="_blank">223 评论</a></span>
 </li>
 <li>
 <strong><a href="https://old.reddit.com/r/MacOS/comments/1r8900z/macos_which_officially_supports_27_year_old/" target="_blank" rel="noopener">27-year-old Apple iBooks can connect to Wi-Fi and download official updates</a></strong>
-<br><span class="meta">262 pts | <a href="https://news.ycombinator.com/item?id=47066241" target="_blank">135 评论</a></span>
+<br><span class="meta">267 pts | <a href="https://news.ycombinator.com/item?id=47066241" target="_blank">136 评论</a></span>
 </li>
 <li>
 <strong><a href="https://nicolasdickenmann.com/blog/the-great-fp64-divide.html" target="_blank" rel="noopener">15 years of FP64 segmentation, and why the Blackwell Ultra breaks the pattern</a></strong>
-<br><span class="meta">71 pts | <a href="https://news.ycombinator.com/item?id=47068890" target="_blank">18 评论</a></span>
+<br><span class="meta">75 pts | <a href="https://news.ycombinator.com/item?id=47068890" target="_blank">19 评论</a></span>
 </li>
 <li>
 <strong><a href="https://code.claude.com/docs/en/legal-and-compliance" target="_blank" rel="noopener">Anthropic officially bans using subscription auth for third party use</a></strong>
-<br><span class="meta">204 pts | <a href="https://news.ycombinator.com/item?id=47069299" target="_blank">213 评论</a></span>
+<br><span class="meta">215 pts | <a href="https://news.ycombinator.com/item?id=47069299" target="_blank">223 评论</a></span>
 </li>
 <li>
 <strong><a href="https://jasonfantl.com/posts/Universal-Unique-IDs/" target="_blank" rel="noopener">Cosmologically Unique IDs</a></strong>
-<br><span class="meta">336 pts | <a href="https://news.ycombinator.com/item?id=47064490" target="_blank">105 评论</a></span>
+<br><span class="meta">339 pts | <a href="https://news.ycombinator.com/item?id=47064490" target="_blank">108 评论</a></span>
 </li>
 <li>
 <strong><a href="https://thunderseethe.dev/posts/how-to-choose-between-hm-and-bidir/" target="_blank" rel="noopener">How to Choose Between Hindley-Milner and Bidirectional Typing</a></strong>
-<br><span class="meta">74 pts | <a href="https://news.ycombinator.com/item?id=47025885" target="_blank">9 评论</a></span>
-</li>
-<li>
-<strong><a href="https://tailscale.com/blog/peer-relays-ga" target="_blank" rel="noopener">Tailscale Peer Relays is now generally available</a></strong>
-<br><span class="meta">367 pts | <a href="https://news.ycombinator.com/item?id=47063005" target="_blank">186 评论</a></span>
-</li>
-<li>
-<strong><a href="https://cepr.org/voxeu/columns/how-ai-affecting-productivity-and-jobs-europe" target="_blank" rel="noopener">How AI is affecting productivity and jobs in Europe</a></strong>
-<br><span class="meta">58 pts | <a href="https://news.ycombinator.com/item?id=47068320" target="_blank">22 评论</a></span>
+<br><span class="meta">76 pts | <a href="https://news.ycombinator.com/item?id=47025885" target="_blank">9 评论</a></span>
 </li>
 <li>
 <strong><a href="https://static.stepfun.com/blog/step-3.5-flash/" target="_blank" rel="noopener">Step 3.5 Flash: Fast Enough to Think. Reliable Enough to Act</a></strong>
-<br><span class="meta">30 pts | <a href="https://news.ycombinator.com/item?id=47069179" target="_blank">8 评论</a></span>
+<br><span class="meta">35 pts | <a href="https://news.ycombinator.com/item?id=47069179" target="_blank">8 评论</a></span>
+</li>
+<li>
+<strong><a href="https://tailscale.com/blog/peer-relays-ga" target="_blank" rel="noopener">Tailscale Peer Relays is now generally available</a></strong>
+<br><span class="meta">372 pts | <a href="https://news.ycombinator.com/item?id=47063005" target="_blank">186 评论</a></span>
+</li>
+<li>
+<strong><a href="https://cepr.org/voxeu/columns/how-ai-affecting-productivity-and-jobs-europe" target="_blank" rel="noopener">How AI is affecting productivity and jobs in Europe</a></strong>
+<br><span class="meta">62 pts | <a href="https://news.ycombinator.com/item?id=47068320" target="_blank">23 评论</a></span>
 </li>
 </ol>
 
@@ -111,44 +111,44 @@ sources:
 
 <ol>
 <li>
-<strong><a href="https://www.infoq.cn/article/CxEVz8hseoW4fpSmNaqZ?utm_source=rss&utm_medium=article" target="_blank" rel="noopener">Nuxt Studio发布：用于生产环境中内容编辑的开源CMS</a></strong>
-<br><small>点击查看原文&gt;</small>
+<strong><a href="https://www.infoq.com/news/2026/02/github-agentic-workflows/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global" target="_blank" rel="noopener">GitHub Agentic Workflows Unleash AI-Driven Repository Automation</a></strong>
+<br><small>Recently launched in technical preview, GitHub Agentic Workflows introduce a way to automate complex, repetitive repository tasks using coding agents that understand context and intent, GitHub says. T...</small>
 </li>
 <li>
-<strong><a href="https://www.infoq.cn/article/7QieJxH5gpNRvL5hKcrG?utm_source=rss&utm_medium=article" target="_blank" rel="noopener">当AI开始拥有灵魂：逐句解读OpenClaw的SOUL.md</a></strong>
-<br><small>点击查看原文&gt;</small>
+<strong><a href="https://www.infoq.com/presentations/panel-modern-data-architectures/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global" target="_blank" rel="noopener">Presentation: Panel: Modern Data Architectures</a></strong>
+<br><small>The panelists emphasize that data engineering is no longer just about &quot;click-and-drag&quot; UI tools; it is software engineering applied to data. By Fabiane Nardon, Matthias Niehoff, Adi Polak, Sarah Usher</small>
 </li>
 <li>
-<strong><a href="https://www.infoq.cn/article/e0gyUzRvzU263FTBePdw?utm_source=rss&utm_medium=article" target="_blank" rel="noopener">从维也纳的PDF到旧⾦⼭的⽖⼦：Peter Steinberger 的来时路</a></strong>
-<br><small>点击查看原文&gt;</small>
+<strong><a href="https://www.infoq.com/news/2026/02/dropbox-context-engine/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global" target="_blank" rel="noopener">How Dropbox Built a Scalable Context Engine for Enterprise Knowledge Search</a></strong>
+<br><small>Dropbox engineers have detailed how the company built the context engine behind Dropbox Dash, revealing a shift toward index-based retrieval, knowledge graph-derived context, and continuous evaluation...</small>
 </li>
 <li>
-<strong><a href="https://www.infoq.cn/article/NCScMoBflBRBsFh5tQmJ?utm_source=rss&utm_medium=article" target="_blank" rel="noopener">Teleport 推出智能体身份框架，为企业基础设施中的 AI 智能体提供安全保障</a></strong>
-<br><small>点击查看原文&gt;</small>
+<strong><a href="https://www.infoq.com/news/2026/02/uber-openai-rate-limiting/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global" target="_blank" rel="noopener">Uber and OpenAI Retool Rate Limiting Systems</a></strong>
+<br><small>Uber and OpenAI are replacing static rate limits with adaptive, infrastructure-level platforms. Uber’s Global Rate Limiter utilizes probabilistic shedding to manage 80M RPS, while OpenAI’s Access Engi...</small>
 </li>
 <li>
-<strong><a href="https://www.infoq.cn/article/cGvFLF4et1Jc68h5T7Sg?utm_source=rss&utm_medium=article" target="_blank" rel="noopener">Shadcn 发布可视化项目构建工具</a></strong>
-<br><small>点击查看原文&gt;</small>
+<strong><a href="https://www.infoq.com/news/2026/02/kimi-k25-swarm/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global" target="_blank" rel="noopener">Moonshot AI Releases Open-Weight Kimi K2.5 Model with Vision and Agent Swarm Capabilities</a></strong>
+<br><small>Moonshot AI released Kimi K2.5, their latest open-weight multimodal LLM. K2.5 excels at coding tasks, with benchmark scores comparable to frontier models such as GPT-5 and Gemini. It also features an ...</small>
 </li>
 <li>
-<strong><a href="https://www.infoq.cn/article/hIHSjxraqSi1kJL2a7uQ?utm_source=rss&utm_medium=article" target="_blank" rel="noopener">使用 AI 生成了 MVP，这对软件架构来说意味着什么</a></strong>
-<br><small>点击查看原文&gt;</small>
+<strong><a href="https://www.infoq.com/news/2026/02/leapwork-ai-testing/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global" target="_blank" rel="noopener">Leapwork Research Shows Why AI in Testing Still Depends on Reliability, Not Just Innovation</a></strong>
+<br><small>Leapwork recently released new research showing that while confidence in AI-driven software testing is growing rapidly, accuracy, stability, and ongoing manual effort remain decisive factors in how fa...</small>
 </li>
 <li>
-<strong><a href="https://www.infoq.cn/article/pKL4h90cQidiLX4H3r79?utm_source=rss&utm_medium=article" target="_blank" rel="noopener">刚刚，OpenClaw “之父”正式加入OpenAI，项目仍保持开源并成立基金会</a></strong>
-<br><small>点击查看原文&gt;</small>
+<strong><a href="https://www.infoq.com/news/2026/02/opanai-codex-app-server/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global" target="_blank" rel="noopener">OpenAI Publishes Codex App Server Architecture for Unifying AI Agent Surfaces</a></strong>
+<br><small>OpenAI has recently published a detailed architecture description of the Codex App Server, a bidirectional protocol that decouples the Codex coding agent&#x27;s core logic from its various client surfaces....</small>
 </li>
 <li>
-<strong><a href="https://www.infoq.cn/article/qGFw1RVvOJJCW7jGTNZW?utm_source=rss&utm_medium=article" target="_blank" rel="noopener">Pandas 3.0推出默认的字符串数据类型和Copy-on-Write语义</a></strong>
-<br><small>点击查看原文&gt;</small>
+<strong><a href="https://www.infoq.com/news/2026/02/ai-agile-manifesto-debate/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global" target="_blank" rel="noopener">Does AI Make the Agile Manifesto Obsolete?</a></strong>
+<br><small>Capgemini&#x27;s Steve Jones argues AI agents building apps in hours have killed the Agile Manifesto, as its human-centric principles don&#x27;t fit agentic SDLCs. While Forrester reports 95% still find Agile r...</small>
 </li>
 <li>
-<strong><a href="https://www.infoq.cn/article/dVwAmDxuqXyFIBE6Gl3d?utm_source=rss&utm_medium=article" target="_blank" rel="noopener">CloudFront添加源站mTLS认证，实现端到端零信任</a></strong>
-<br><small>点击查看原文&gt;</small>
+<strong><a href="https://www.infoq.com/articles/proactive-autoscaling-edge-kubernetes/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global" target="_blank" rel="noopener">Article: Proactive Autoscaling for Edge Applications in Kubernetes</a></strong>
+<br><small>Kubernetes often reacts too late when traffic suddenly increases at the edge. A proactive scaling approach that considers response time, spare CPU capacity, and container startup delays can add or rem...</small>
 </li>
 <li>
-<strong><a href="https://www.infoq.cn/article/lCM9r8iIt0E5taMhmCfK?utm_source=rss&utm_medium=article" target="_blank" rel="noopener">Kubernetes驱动AI扩展，文化转型成为关键因素</a></strong>
-<br><small>点击查看原文&gt;</small>
+<strong><a href="https://www.infoq.com/news/2026/02/chrome-temporal-date-api/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global" target="_blank" rel="noopener">Chrome 144 Ships Temporal API: Advancing JavaScript Date/Time Standardisation</a></strong>
+<br><small>Chrome 144 introduces the groundbreaking Temporal API, revolutionizing date and time management in JavaScript. As a modern alternative to the criticized Date object, Temporal resolves parsing ambiguit...</small>
 </li>
 </ol>
 

@@ -19,7 +19,7 @@
 
 ### 爬虫 (Python)
 - **版本**: Python 3.11+
-- **依赖**: requests, beautifulsoup4, lxml
+- **依赖**: requests, lxml
 - **安装**: `pip install -r requirements.txt`
 
 ## 目录结构
@@ -41,6 +41,12 @@
 │   ├── main.py           # 主入口
 │   ├── jekyll_generator.py # Jekyll 新闻文章生成器
 │   └── scrapers/         # 各来源爬虫实现
+│       ├── base.py       # 基类 (包含通用 RSS 逻辑)
+│       ├── utils.py      # RequestHelper 工具类
+│       ├── hackernews.py # Hacker News API 爬虫
+│       ├── kr36.py       # 36氪 RSS 爬虫
+│       ├── infoq.py      # InfoQ RSS 爬虫
+│       └── sspai.py      # 少数派 RSS 爬虫
 └── .github/workflows/
     ├── daily-news.yml    # 每日新闻抓取
     └── pages.yml         # GitHub Pages 部署
@@ -77,10 +83,11 @@ author: 撑花儿
 ## 代码风格
 
 ### Python
-- 使用类型注解: `def func(name: str) -> List[Dict]:`
+- 使用类型注解: `def func(name: str) -> List[NewsItem]:`
 - 类名: PascalCase (如 `HackerNewsScraper`)
 - 函数/变量: snake_case (如 `get_news`)
-- 常量: UPPER_SNAKE_CASE
+- 常量: UPPER_SNAKE_CASE (如 `MAX_SUMMARY_LENGTH`)
+- 导入顺序: 标准库 → 第三方库 → 本地模块
 
 ### Jekyll/Liquid
 - Front matter 使用 YAML 格式
@@ -121,17 +128,20 @@ ruff check src/
 ## 爬虫架构
 
 ```
-BaseScraper (抽象基类)
+BaseScraper (抽象基类，包含通用 RSS 抓取逻辑)
 ├── HackerNewsScraper  # 使用官方 API
-├── Kr36Scraper        # RSS 订阅
-├── InfoQScraper       # RSS 订阅
-└── SspaiScraper       # RSS 订阅
+├── Kr36Scraper        # RSS 订阅 (继承基类 RSS 逻辑)
+├── InfoQScraper       # RSS 订阅 (继承基类 RSS 逻辑)
+└── SspaiScraper       # RSS 订阅 (继承基类 RSS 逻辑)
 ```
 
-所有爬虫包含反爬机制:
-- 随机 User-Agent
-- 请求延时
-- 指数退避重试
+### 核心类型
+- **NewsItem**: TypedDict，统一新闻数据结构 (title, url, summary, score, comments, descendants)
+- **RequestHelper**: HTTP 请求工具类，包含反爬机制
+  - 随机 User-Agent
+  - 请求延时
+  - 指数退避重试
+  - HTML 清理
 
 ## GitHub Actions
 

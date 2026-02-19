@@ -1,75 +1,23 @@
-# The Site Configuration
-
 theme: jekyll-theme-chirpy
 
 lang: zh-CN
-
 timezone: Asia/Shanghai
 
 title: 撑花儿
-
 tagline: 热爱技术，享受生活
-
-description: >-
-  每日自动抓取科技新闻，分享技术文章和项目经验。
-
+description: 每日自动抓取科技新闻，分享技术文章和项目经验。
 url: "https://leonce28.github.io"
 
 github:
   username: leonce28
 
-twitter:
-  username:
-
 social:
   name: 撑花儿
-  email: your-email@example.com
   links:
     - https://github.com/leonce28
 
-webmaster_verifications:
-  google:
-  bing:
-
-analytics:
-  google:
-    id:
-
-pageviews:
-  provider:
-
-theme_mode:
-
-cdn:
-
 avatar: /assets/img/avatar.png
-
-social_preview_image:
-
 toc: true
-
-comments:
-  provider:
-  disqus:
-    shortname:
-  utterances:
-    repo:
-    issue_term:
-  giscus:
-    repo:
-    repo_id:
-    category:
-    category_id:
-    mapping:
-    strict:
-    input_position:
-    lang:
-    reactions_enabled:
-
-assets:
-  self_host:
-    enabled:
-    env:
 
 pwa:
   enabled: true
@@ -78,7 +26,6 @@ pwa:
     deny_paths:
 
 paginate: 10
-
 baseurl: ""
 
 kramdown:
@@ -136,6 +83,8 @@ exclude:
   - tools
   - README.md
   - LICENSE
+  - AGENTS.md
+  - review.md
   - purgecss.js
   - "*.config.js"
   - "package*.json"

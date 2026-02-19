@@ -1,16 +1,24 @@
+import html
+import logging
 from datetime import datetime, timezone, timedelta
-from typing import Dict, List
 from pathlib import Path
+from typing import Dict, List
+from zoneinfo import ZoneInfo
+
+from .scrapers import NewsItem
+
+logger = logging.getLogger(__name__)
+
+CHINA_TZ = ZoneInfo("Asia/Shanghai")
 
 
 class JekyllGenerator:
     def __init__(self):
-        self.date = datetime.now(timezone.utc)
-        self.date_cn = self.date.astimezone(timezone(timedelta(hours=8)))
-        self.date_str = self.date_cn.strftime("%Y-%m-%d")
-        self.datetime_str = self.date_cn.strftime("%Y-%m-%d %H:%M:%S +0800")
+        self.date = datetime.now(CHINA_TZ)
+        self.date_str = self.date.strftime("%Y-%m-%d")
+        self.datetime_str = self.date.strftime("%Y-%m-%d %H:%M:%S %z")
 
-    def generate_news_post(self, all_news: Dict[str, List[Dict]]) -> str:
+    def generate_news_post(self, all_news: Dict[str, List[NewsItem]]) -> str:
         sources_yaml = ""
         for source_name, news_list in all_news.items():
             if news_list:
@@ -64,16 +72,11 @@ sources:
             section += "</ol>\n"
             content_sections.append(section)
 
+        logger.info(f"Generated news post for {self.date_str}")
         return front_matter + "\n" + "\n".join(content_sections)
 
     def _escape_html(self, text: str) -> str:
-        return (
-            text.replace("&", "&amp;")
-            .replace("<", "&lt;")
-            .replace(">", "&gt;")
-            .replace('"', "&quot;")
-            .replace("'", "&#39;")
-        )
+        return html.escape(text)
 
     def get_filename(self) -> str:
         return f"_posts/{self.date_str}-daily-tech-news.md"

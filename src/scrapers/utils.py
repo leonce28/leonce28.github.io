@@ -1,10 +1,21 @@
+import logging
 import random
+import re
 import time
 from typing import Dict, Optional
+
 import requests
 
+logger = logging.getLogger(__name__)
 
-class AntiScraper:
+MAX_SUMMARY_LENGTH = 200
+DEFAULT_MIN_DELAY = 0.5
+DEFAULT_MAX_DELAY = 1.5
+DEFAULT_MAX_RETRIES = 3
+DEFAULT_TIMEOUT = 15
+
+
+class RequestHelper:
     USER_AGENTS = [
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36",
@@ -43,10 +54,10 @@ class AntiScraper:
     @staticmethod
     def get_headers(extra_headers: Optional[Dict] = None) -> Dict[str, str]:
         headers = {
-            "User-Agent": random.choice(AntiScraper.USER_AGENTS),
-            "Referer": random.choice(AntiScraper.REFERERS),
+            "User-Agent": random.choice(RequestHelper.USER_AGENTS),
+            "Referer": random.choice(RequestHelper.REFERERS),
             "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8",
-            "Accept-Language": random.choice(AntiScraper.ACCEPT_LANGUAGES),
+            "Accept-Language": random.choice(RequestHelper.ACCEPT_LANGUAGES),
             "Accept-Encoding": "gzip, deflate, br",
             "Connection": "keep-alive",
             "Upgrade-Insecure-Requests": "1",
@@ -57,30 +68,48 @@ class AntiScraper:
         return headers
 
     @staticmethod
-    def random_delay(min_sec: float = 1.0, max_sec: float = 3.0) -> None:
+    def random_delay(
+        min_sec: float = DEFAULT_MIN_DELAY, max_sec: float = DEFAULT_MAX_DELAY
+    ) -> None:
         time.sleep(random.uniform(min_sec, max_sec))
 
     @staticmethod
     def fetch_with_retry(
         url: str,
-        max_retries: int = 3,
-        timeout: int = 15,
+        max_retries: int = DEFAULT_MAX_RETRIES,
+        timeout: int = DEFAULT_TIMEOUT,
         extra_headers: Optional[Dict] = None,
     ) -> Optional[requests.Response]:
         for attempt in range(max_retries):
             try:
-                AntiScraper.random_delay(0.5, 1.5)
+                RequestHelper.random_delay()
                 response = requests.get(
                     url,
-                    headers=AntiScraper.get_headers(extra_headers),
+                    headers=RequestHelper.get_headers(extra_headers),
                     timeout=timeout,
                 )
                 if response.status_code == 200:
                     return response
-                elif response.status_code == 429:
+                logger.warning(
+                    f"Request to {url} returned status {response.status_code} (attempt {attempt + 1}/{max_retries})"
+                )
+                if response.status_code == 429:
                     wait_time = (2**attempt) + random.uniform(1, 3)
+                    logger.info(f"Rate limited, waiting {wait_time:.1f}s")
                     time.sleep(wait_time)
-            except requests.exceptions.RequestException:
+            except requests.exceptions.RequestException as e:
                 wait_time = (2**attempt) + random.uniform(0.5, 1.5)
+                logger.warning(
+                    f"Request to {url} failed (attempt {attempt + 1}/{max_retries}): {e}"
+                )
                 time.sleep(wait_time)
+        logger.error(f"All {max_retries} attempts failed for {url}")
         return None
+
+    @staticmethod
+    def clean_html(text: str) -> str:
+        if not text:
+            return ""
+        text = re.sub(r"<[^>]+>", "", text)
+        text = re.sub(r"\s+", " ", text)
+        return text.strip()
