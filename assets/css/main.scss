@@ -1,0 +1,64 @@
+---
+---
+
+@import "variables";
+@import "themes";
+@import "base";
+@import "header";
+@import "news";
+@import "posts";
+@import "projects";
+
+// Footer styles
+.site-footer {
+    background: var(--bg-secondary);
+    border-top: 1px solid var(--border);
+    padding: $spacing-xl 0;
+    margin-top: $spacing-xxl;
+    
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: $spacing-lg;
+    }
+    
+    .footer-info {
+        .copyright {
+            font-size: $font-size-sm;
+            margin-bottom: $spacing-xs;
+        }
+        
+        .powered-by {
+            font-size: $font-size-xs;
+            color: var(--text-muted);
+            margin: 0;
+            
+            a {
+                color: var(--text-secondary);
+            }
+        }
+    }
+    
+    .footer-links {
+        display: flex;
+        gap: $spacing-md;
+        
+        a {
+            color: var(--text-secondary);
+            transition: color $transition-fast;
+            
+            &:hover {
+                color: var(--accent);
+            }
+        }
+    }
+}
+
+@media (max-width: $breakpoint-md) {
+    .site-footer .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}

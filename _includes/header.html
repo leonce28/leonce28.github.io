@@ -1,0 +1,35 @@
+<header class="site-header">
+    <div class="container">
+        <div class="header-content">
+            <a href="{{ '/' | relative_url }}" class="site-logo">
+                <span class="logo-icon">📰</span>
+                <span class="logo-text">{{ site.title }}</span>
+            </a>
+            
+            <nav class="site-nav">
+                <a href="{{ '/' | relative_url }}" class="nav-link {% if page.url == '/' %}active{% endif %}">首页</a>
+                <a href="{{ '/blog/' | relative_url }}" class="nav-link {% if page.url contains '/blog/' %}active{% endif %}">博客</a>
+                <a href="{{ '/news/' | relative_url }}" class="nav-link {% if page.url contains '/news/' %}active{% endif %}">新闻</a>
+                <a href="{{ '/projects/' | relative_url }}" class="nav-link {% if page.url contains '/projects/' %}active{% endif %}">项目</a>
+                <a href="{{ '/about/' | relative_url }}" class="nav-link {% if page.url contains '/about/' %}active{% endif %}">关于</a>
+            </nav>
+            
+            <div class="header-actions">
+                {% include theme-toggle.html %}
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <nav class="mobile-nav">
+        <a href="{{ '/' | relative_url }}" class="nav-link">首页</a>
+        <a href="{{ '/blog/' | relative_url }}" class="nav-link">博客</a>
+        <a href="{{ '/news/' | relative_url }}" class="nav-link">新闻</a>
+        <a href="{{ '/projects/' | relative_url }}" class="nav-link">项目</a>
+        <a href="{{ '/about/' | relative_url }}" class="nav-link">关于</a>
+    </nav>
+</header>

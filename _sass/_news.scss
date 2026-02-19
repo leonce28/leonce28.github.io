@@ -1,0 +1,203 @@
+// Hero section
+.hero {
+    background: var(--bg-secondary);
+    padding: $spacing-xxl 0;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    
+    .hero-content {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    
+    .hero-title {
+        font-size: 2.5rem;
+        margin-bottom: $spacing-md;
+    }
+    
+    .hero-subtitle {
+        font-size: $font-size-lg;
+        color: var(--text-secondary);
+        margin-bottom: $spacing-xl;
+    }
+    
+    .hero-actions {
+        display: flex;
+        gap: $spacing-md;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: $breakpoint-md) {
+    .hero {
+        padding: $spacing-xl 0;
+        
+        .hero-title {
+            font-size: $font-size-2xl;
+        }
+        
+        .hero-subtitle {
+            font-size: $font-size-base;
+        }
+    }
+}
+
+// News card
+.news-card-full {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: $border-radius-lg;
+    padding: $spacing-lg;
+    transition: border-color $transition-fast;
+    
+    &:hover {
+        border-color: var(--accent);
+    }
+    
+    .news-card-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: $spacing-lg;
+        flex-wrap: wrap;
+        gap: $spacing-md;
+    }
+    
+    .news-card-date {
+        font-size: $font-size-xl;
+    }
+    
+    .news-card-link {
+        font-size: $font-size-sm;
+        color: var(--text-secondary);
+        
+        &:hover {
+            color: var(--accent);
+        }
+    }
+    
+    .news-sources {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: $spacing-md;
+        margin-bottom: $spacing-lg;
+    }
+    
+    .source-preview {
+        text-align: center;
+        padding: $spacing-md;
+        background: var(--bg-secondary);
+        border-radius: $border-radius;
+        border: 1px solid var(--border);
+    }
+    
+    .source-name {
+        font-size: $font-size-sm;
+        margin-bottom: $spacing-xs;
+    }
+    
+    .source-count {
+        font-size: $font-size-xs;
+        color: var(--text-muted);
+        margin: 0;
+    }
+}
+
+// News page
+.news-page {
+    padding: $spacing-xl 0;
+}
+
+.news-content {
+    h2 {
+        margin-top: $spacing-xl;
+        margin-bottom: $spacing-md;
+        padding-bottom: $spacing-sm;
+        border-bottom: 2px solid var(--accent);
+        display: inline-block;
+    }
+    
+    ol {
+        list-style: none;
+        margin-left: 0;
+        
+        li {
+            margin-bottom: $spacing-md;
+            padding: $spacing-md;
+            background: var(--bg-card);
+            border-radius: $border-radius;
+            border: 1px solid var(--border);
+            transition: all $transition-fast;
+            
+            &:hover {
+                border-color: var(--accent);
+                transform: translateX(4px);
+            }
+        }
+    }
+}
+
+// News archive
+.news-archive {
+    .archive-list {
+        display: grid;
+        gap: $spacing-md;
+    }
+    
+    .archive-card {
+        display: flex;
+        align-items: center;
+        gap: $spacing-lg;
+        padding: $spacing-md $spacing-lg;
+        background: var(--bg-card);
+        border: 1px solid var(--border);
+        border-radius: $border-radius;
+        text-decoration: none;
+        transition: all $transition-fast;
+        
+        &:hover {
+            border-color: var(--accent);
+            transform: translateX(5px);
+        }
+    }
+    
+    .archive-date {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 50px;
+    }
+    
+    .date-num {
+        font-size: 28px;
+        font-weight: 700;
+        color: var(--accent);
+        line-height: 1;
+    }
+    
+    .date-month {
+        font-size: $font-size-xs;
+        color: var(--text-muted);
+        margin-top: $spacing-xs;
+    }
+    
+    .archive-info {
+        flex: 1;
+        
+        h3 {
+            font-size: $font-size-base;
+            color: var(--text-primary);
+        }
+        
+        .weekday {
+            font-size: $font-size-sm;
+            color: var(--text-muted);
+        }
+    }
+    
+    .arrow {
+        color: var(--text-muted);
+        font-size: $font-size-lg;
+    }
+}

@@ -1,0 +1,76 @@
+---
+layout: default
+---
+
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">👋 Hello, I'm {{ site.author }}</h1>
+            <p class="hero-subtitle">{{ site.description }}</p>
+            <div class="hero-actions">
+                <a href="#news" class="btn btn-primary">查看新闻</a>
+                <a href="{{ '/blog/' | relative_url }}" class="btn btn-secondary">阅读博客</a>
+                <a href="{{ '/about/' | relative_url }}" class="btn btn-outline">了解更多</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ content }}
+
+{% if site.collections.news.docs.size > 0 %}
+<section id="news" class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">📰 今日科技新闻</h2>
+            <a href="{{ '/news/' | relative_url }}" class="view-all">查看历史归档 →</a>
+        </div>
+        {% assign latest_news = site.news | sort: 'date' | reverse | first %}
+        {% if latest_news %}
+            {% include news-card.html news=latest_news %}
+        {% endif %}
+    </div>
+</section>
+{% endif %}
+
+{% if site.posts.size > 0 %}
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">📝 最新文章</h2>
+            <a href="{{ '/blog/' | relative_url }}" class="view-all">查看全部 →</a>
+        </div>
+        <div class="posts-grid">
+            {% for post in site.posts limit:3 %}
+                {% include post-card.html post=post %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}
+
+{% if site.collections.projects.docs.size > 0 %}
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">🚀 精选项目</h2>
+            <a href="{{ '/projects/' | relative_url }}" class="view-all">查看全部 →</a>
+        </div>
+        <div class="projects-grid">
+            {% for project in site.projects limit:3 %}
+            <a href="{{ project.url | relative_url }}" class="project-card">
+                <div class="project-icon">{{ project.icon | default: '📦' }}</div>
+                <h3 class="project-title">{{ project.title }}</h3>
+                <p class="project-description">{{ project.description | truncate: 80 }}</p>
+                <div class="project-meta">
+                    <span class="project-tech">{{ project.tech }}</span>
+                    {% if project.stars %}
+                    <span class="project-stars">★ {{ project.stars }}</span>
+                    {% endif %}
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endif %}

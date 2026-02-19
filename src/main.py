@@ -7,6 +7,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from src.scrapers import HackerNewsScraper, Kr36Scraper, InfoQScraper, SspaiScraper
 from src.generator import MarkdownGenerator
 from src.html_generator import HtmlGenerator
+from src.jekyll_generator import JekyllGenerator
 
 
 def main():
@@ -39,6 +40,9 @@ def main():
     news_dir = base_path / "news"
     news_dir.mkdir(parents=True, exist_ok=True)
 
+    _news_dir = base_path / "_news"
+    _news_dir.mkdir(parents=True, exist_ok=True)
+
     md_generator = MarkdownGenerator()
     md_content = md_generator.generate(all_news)
     md_path = base_path / md_generator.get_filename()
@@ -58,6 +62,13 @@ def main():
     with open(index_path, "w", encoding="utf-8") as f:
         f.write(index_content)
     print(f"[INDEX] 索引已更新: {index_path}")
+
+    jekyll_generator = JekyllGenerator()
+    jekyll_content = jekyll_generator.generate_news_post(all_news)
+    jekyll_path = base_path / jekyll_generator.get_filename()
+    with open(jekyll_path, "w", encoding="utf-8") as f:
+        f.write(jekyll_content)
+    print(f"[JEKYLL] 新闻已生成: {jekyll_path}")
 
     print("=" * 50)
 

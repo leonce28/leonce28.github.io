@@ -1,0 +1,38 @@
+<div class="news-card-full">
+    <div class="news-card-header">
+        <h3 class="news-card-date">{{ include.news.date | date: "%Y年%m月%d日" }}</h3>
+        <a href="{{ include.news.url | relative_url }}" class="news-card-link">查看详情 →</a>
+    </div>
+    
+    {% if include.news.content %}
+    <div class="news-sources">
+        {% assign content = include.news.content %}
+        {% if content contains "## Hacker News" %}
+        <div class="source-preview">
+            <h4 class="source-name">Hacker News</h4>
+            <p class="source-count">Top 10</p>
+        </div>
+        {% endif %}
+        {% if content contains "## 36氪" %}
+        <div class="source-preview">
+            <h4 class="source-name">36氪</h4>
+            <p class="source-count">Top 10</p>
+        </div>
+        {% endif %}
+        {% if content contains "## InfoQ" %}
+        <div class="source-preview">
+            <h4 class="source-name">InfoQ</h4>
+            <p class="source-count">Top 10</p>
+        </div>
+        {% endif %}
+        {% if content contains "## 少数派" %}
+        <div class="source-preview">
+            <h4 class="source-name">少数派</h4>
+            <p class="source-count">Top 10</p>
+        </div>
+        {% endif %}
+    </div>
+    {% endif %}
+    
+    <a href="{{ include.news.url | relative_url }}" class="btn btn-primary btn-sm">阅读完整新闻</a>
+</div>

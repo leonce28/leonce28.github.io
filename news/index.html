@@ -1,187 +1,46 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>科技新闻日报 - 历史归档</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📁</text></svg>">
-    <style>
-        :root {
-            --bg-primary: #0d1117;
-            --bg-secondary: #161b22;
-            --bg-card: #21262d;
-            --text-primary: #e6edf3;
-            --text-secondary: #8b949e;
-            --text-muted: #6e7681;
-            --accent: #58a6ff;
-            --accent-hover: #79b8ff;
-            --border: #30363d;
-            --shadow: rgba(0, 0, 0, 0.3);
-        }
+---
+layout: default
+title: 新闻归档
+description: 每日科技新闻历史记录
+---
 
-        [data-theme="light"] {
-            --bg-primary: #f6f8fa;
-            --bg-secondary: #ffffff;
-            --bg-card: #ffffff;
-            --text-primary: #24292f;
-            --text-secondary: #57606a;
-            --text-muted: #8c959f;
-            --accent: #0969da;
-            --accent-hover: #0550ae;
-            --border: #d0d7de;
-            --shadow: rgba(0, 0, 0, 0.1);
-        }
-
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", Helvetica, Arial, sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            min-height: 100vh;
-        }
-
-        .container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
-
-        header {
-            background: var(--bg-secondary);
-            border-bottom: 1px solid var(--border);
-            padding: 20px 0;
-            text-align: center;
-        }
-
-        h1 { font-size: 24px; margin-bottom: 8px; }
-
-        .subtitle { color: var(--text-secondary); font-size: 14px; }
-
-        .theme-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            color: var(--text-primary);
-            padding: 8px 16px;
-            border-radius: 6px;
-            cursor: pointer;
-            font-size: 14px;
-            display: flex;
-            align-items: center;
-            gap: 6px;
-            transition: all 0.2s;
-            z-index: 100;
-        }
-
-        .theme-toggle:hover { background: var(--border); }
-
-        main { padding: 30px 0; }
-
-        .archive-list { display: grid; gap: 12px; }
-
-        .archive-card {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            background: var(--bg-card);
-            border: 1px solid var(--border);
-            border-radius: 12px;
-            padding: 16px 20px;
-            text-decoration: none;
-            transition: all 0.2s;
-        }
-
-        .archive-card:hover {
-            border-color: var(--accent);
-            transform: translateX(5px);
-        }
-
-        .archive-date {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-width: 50px;
-        }
-
-        .date-num { font-size: 28px; font-weight: 700; color: var(--accent); line-height: 1; }
-        .date-month { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
-
-        .archive-info { flex: 1; }
-        .archive-info h3 { font-size: 16px; color: var(--text-primary); }
-        .weekday { font-size: 13px; color: var(--text-muted); }
-
-        .arrow { color: var(--text-muted); font-size: 18px; }
-
-        footer {
-            text-align: center;
-            padding: 30px 0;
-            color: var(--text-muted);
-            font-size: 13px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>📁 历史归档</h1>
-            <p class="subtitle">科技新闻日报存档</p>
-        </div>
-    </header>
-
-    <button class="theme-toggle" onclick="toggleTheme()">
-        <span id="theme-icon">🌙</span>
-        <span id="theme-text">深色</span>
-    </button>
-
-    <main class="container">
+<div class="news-archive">
+    <div class="container container-narrow">
+        <header class="page-header">
+            <h1 class="page-title">📰 新闻归档</h1>
+            <p class="page-description">每日科技新闻历史记录</p>
+        </header>
+        
+        {% if site.news.size > 0 %}
         <div class="archive-list">
-            
-            <a href="2026-02-19.html" class="archive-card">
+            {% assign news_items = site.news | sort: 'date' | reverse %}
+            {% for news in news_items %}
+            <a href="{{ news.url | relative_url }}" class="archive-card">
                 <div class="archive-date">
-                    <span class="date-num">19</span>
-                    <span class="date-month">02月</span>
+                    <span class="date-num">{{ news.date | date: "%d" }}</span>
+                    <span class="date-month">{{ news.date | date: "%m" }}月</span>
                 </div>
                 <div class="archive-info">
-                    <h3>2026年02月19日</h3>
-                    <span class="weekday">周四</span>
+                    <h3>{{ news.date | date: "%Y年%m月%d日" }}</h3>
+                    <span class="weekday">
+                        {% assign weekday = news.date | date: "%u" %}
+                        {% case weekday %}
+                        {% when '1' %}周一
+                        {% when '2' %}周二
+                        {% when '3' %}周三
+                        {% when '4' %}周四
+                        {% when '5' %}周五
+                        {% when '6' %}周六
+                        {% when '7' %}周日
+                        {% endcase %}
+                    </span>
                 </div>
                 <span class="arrow">→</span>
             </a>
+            {% endfor %}
         </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>由 GitHub Actions 自动生成</p>
-        </div>
-    </footer>
-
-    <script>
-        function toggleTheme() {
-            const html = document.documentElement;
-            const currentTheme = html.getAttribute("data-theme");
-            const newTheme = currentTheme === "light" ? "dark" : "light";
-            html.setAttribute("data-theme", newTheme);
-            localStorage.setItem("theme", newTheme);
-            updateThemeButton(newTheme);
-        }
-
-        function updateThemeButton(theme) {
-            const icon = document.getElementById("theme-icon");
-            const text = document.getElementById("theme-text");
-            if (theme === "light") {
-                icon.textContent = "☀️";
-                text.textContent = "浅色";
-            } else {
-                icon.textContent = "🌙";
-                text.textContent = "深色";
-            }
-        }
-
-        (function() {
-            const savedTheme = localStorage.getItem("theme") || "dark";
-            document.documentElement.setAttribute("data-theme", savedTheme);
-            updateThemeButton(savedTheme);
-        })();
-    </script>
-</body>
-</html>
+        {% else %}
+        <p class="no-news">暂无新闻记录，请稍后再来...</p>
+        {% endif %}
+    </div>
+</div>

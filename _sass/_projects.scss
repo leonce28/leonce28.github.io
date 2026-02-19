@@ -1,0 +1,88 @@
+// Projects styles
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: $spacing-lg;
+}
+
+.project-card {
+    display: block;
+    padding: $spacing-lg;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: $border-radius-lg;
+    text-decoration: none;
+    transition: all $transition-fast;
+    
+    &:hover {
+        border-color: var(--accent);
+        transform: translateY(-4px);
+        box-shadow: $shadow-lg;
+        
+        .project-title {
+            color: var(--accent);
+        }
+    }
+    
+    .project-icon {
+        font-size: 48px;
+        margin-bottom: $spacing-md;
+    }
+    
+    .project-title {
+        font-size: $font-size-lg;
+        color: var(--text-primary);
+        margin-bottom: $spacing-sm;
+        transition: color $transition-fast;
+    }
+    
+    .project-description {
+        color: var(--text-secondary);
+        font-size: $font-size-sm;
+        margin-bottom: $spacing-md;
+    }
+    
+    .project-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: $font-size-xs;
+        color: var(--text-muted);
+    }
+    
+    .project-tech {
+        padding: $spacing-xs $spacing-sm;
+        background: var(--bg-secondary);
+        border-radius: $border-radius-full;
+    }
+    
+    .project-stars {
+        color: var(--success);
+    }
+}
+
+// Single project page
+.project-page {
+    .project-header {
+        margin-bottom: $spacing-xl;
+    }
+    
+    .project-icon-large {
+        font-size: 64px;
+        margin-bottom: $spacing-md;
+    }
+    
+    .project-links {
+        display: flex;
+        gap: $spacing-md;
+        margin-top: $spacing-md;
+    }
+    
+    .project-screenshot {
+        width: 100%;
+        border-radius: $border-radius-lg;
+        margin: $spacing-xl 0;
+        box-shadow: $shadow-lg;
+    }
+}

@@ -1,0 +1,74 @@
+title: Tech News Daily
+description: 每日科技新闻 & 个人技术博客
+author: leonce28
+email: your-email@example.com
+url: "https://leonce28.github.io"
+baseurl: "/daily-tech-news"
+
+github_username: leonce28
+twitter_username: 
+
+timezone: Asia/Shanghai
+lang: zh-CN
+locale: zh_CN
+
+collections:
+  news:
+    output: true
+    permalink: /news/:path/
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "leonce28"
+      comments: true
+  - scope:
+      path: ""
+      type: "news"
+    values:
+      layout: "news"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+
+paginate: 6
+paginate_path: "/blog/page:num/"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-sitemap
+
+exclude:
+  - src/
+  - node_modules/
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - requirements.txt
+  - vendor/
+
+include:
+  - _pages
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+permalink: /blog/:year-:month-:day-:title/
+
+google_analytics: 
+disqus_shortname: 
