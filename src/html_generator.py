@@ -92,7 +92,7 @@ class HtmlGenerator:
     <title>科技新闻日报 - {date_display}</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📰</text></svg>">
     <style>
-        :root {
+        :root {{
             --bg-primary: #0d1117;
             --bg-secondary: #161b22;
             --bg-card: #21262d;
@@ -104,9 +104,9 @@ class HtmlGenerator:
             --border: #30363d;
             --success: #3fb950;
             --shadow: rgba(0, 0, 0, 0.3);
-        }
+        }}
 
-        [data-theme="light"] {
+        [data-theme="light"] {{
             --bg-primary: #f6f8fa;
             --bg-secondary: #ffffff;
             --bg-card: #ffffff;
@@ -117,29 +117,29 @@ class HtmlGenerator:
             --accent-hover: #0550ae;
             --border: #d0d7de;
             --shadow: rgba(0, 0, 0, 0.1);
-        }
+        }}
 
-        * {
+        * {{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-        }
+        }}
 
-        body {
+        body {{
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", Helvetica, Arial, sans-serif;
             background: var(--bg-primary);
             color: var(--text-primary);
             line-height: 1.6;
             min-height: 100vh;
-        }
+        }}
 
-        .container {
+        .container {{
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
-        }
+        }}
 
-        header {
+        header {{
             background: var(--bg-secondary);
             border-bottom: 1px solid var(--border);
             padding: 20px 0;
@@ -147,38 +147,38 @@ class HtmlGenerator:
             top: 0;
             z-index: 100;
             box-shadow: 0 1px 3px var(--shadow);
-        }
+        }}
 
-        .header-content {
+        .header-content {{
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
             gap: 15px;
-        }
+        }}
 
-        .logo {
+        .logo {{
             display: flex;
             align-items: center;
             gap: 12px;
-        }
+        }}
 
-        .logo-icon {
+        .logo-icon {{
             font-size: 32px;
-        }
+        }}
 
-        h1 {
+        h1 {{
             font-size: 24px;
             font-weight: 600;
-        }
+        }}
 
-        .header-actions {
+        .header-actions {{
             display: flex;
             align-items: center;
             gap: 15px;
-        }
+        }}
 
-        .theme-toggle {
+        .theme-toggle {{
             background: var(--bg-card);
             border: 1px solid var(--border);
             color: var(--text-primary);
@@ -190,82 +190,82 @@ class HtmlGenerator:
             align-items: center;
             gap: 6px;
             transition: all 0.2s;
-        }
+        }}
 
-        .theme-toggle:hover {
+        .theme-toggle:hover {{
             background: var(--border);
-        }
+        }}
 
-        .nav-links {
+        .nav-links {{
             display: flex;
             gap: 15px;
-        }
+        }}
 
-        .nav-links a {
+        .nav-links a {{
             color: var(--text-secondary);
             text-decoration: none;
             font-size: 14px;
             padding: 8px 12px;
             border-radius: 6px;
             transition: all 0.2s;
-        }
+        }}
 
-        .nav-links a:hover {
+        .nav-links a:hover {{
             background: var(--bg-card);
             color: var(--accent);
-        }
+        }}
 
-        main {
+        main {{
             padding: 30px 0;
-        }
+        }}
 
-        .date-info {
+        .date-info {{
             text-align: center;
             color: var(--text-secondary);
             margin-bottom: 30px;
             font-size: 14px;
-        }
+        }}
 
-        .source-section {
+        .source-section {{
             margin-bottom: 40px;
-        }
+        }}
 
-        .source-title {
+        .source-title {{
             font-size: 20px;
             font-weight: 600;
             padding-bottom: 12px;
             margin-bottom: 20px;
             border-bottom: 2px solid var(--accent);
             display: inline-block;
-        }
+        }}
 
-        .news-grid {
+        .news-grid {{
             display: grid;
             gap: 16px;
-        }
+        }}
 
-        .news-card {
+        .news-card {{
             background: var(--bg-card);
             border: 1px solid var(--border);
             border-radius: 12px;
             padding: 20px;
             transition: all 0.2s;
-        }
+        }}
 
-        .news-card:hover {
+        .news-card:hover {{
             border-color: var(--accent);
             box-shadow: 0 4px 12px var(--shadow);
             transform: translateY(-2px);
-        }
+        }}
 
-        .news-header {
+        .news-header {{
             display: flex;
             align-items: flex-start;
             gap: 12px;
             margin-bottom: 10px;
-        }
+        }}
 
-        .news-rank {
+        .news-rank {{
             background: var(--accent);
             color: white;
             font-size: 12px;
@@ -277,104 +277,104 @@ class HtmlGenerator:
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
-        }
+        }}
 
-        .news-title {
+        .news-title {{
             font-size: 16px;
             font-weight: 500;
             line-height: 1.4;
-        }
+        }}
 
-        .news-title a {
+        .news-title a {{
             color: var(--text-primary);
             text-decoration: none;
-        }
+        }}
 
-        .news-title a:hover {
+        .news-title a:hover {{
             color: var(--accent);
-        }
+        }}
 
-        .news-summary {
+        .news-summary {{
             color: var(--text-secondary);
             font-size: 14px;
             line-height: 1.6;
             margin: 10px 0 12px 36px;
-        }
+        }}
 
-        .news-footer {
+        .news-footer {{
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-left: 36px;
             flex-wrap: wrap;
             gap: 10px;
-        }
+        }}
 
-        .news-meta {
+        .news-meta {{
             display: flex;
             align-items: center;
             gap: 15px;
             font-size: 13px;
             color: var(--text-muted);
-        }
+        }}
 
-        .score {
+        .score {{
             color: var(--success);
             font-weight: 500;
-        }
+        }}
 
-        .comments a {
+        .comments a {{
             color: var(--text-muted);
             text-decoration: none;
-        }
+        }}
 
-        .comments a:hover {
+        .comments a:hover {{
             color: var(--accent);
-        }
+        }}
 
-        .read-more {
+        .read-more {{
             color: var(--accent);
             text-decoration: none;
             font-size: 13px;
             font-weight: 500;
-        }
+        }}
 
-        .read-more:hover {
+        .read-more:hover {{
             color: var(--accent-hover);
             text-decoration: underline;
-        }
+        }}
 
-        footer {
+        footer {{
             text-align: center;
             padding: 30px 0;
             color: var(--text-muted);
             font-size: 13px;
             border-top: 1px solid var(--border);
             margin-top: 40px;
-        }
+        }}
 
-        @media (max-width: 768px) {
-            .header-content {
+        @media (max-width: 768px) {{
+            .header-content {{
                 flex-direction: column;
                 text-align: center;
-            }
+            }}
 
-            h1 {
+            h1 {{
                 font-size: 20px;
-            }
+            }}
 
-            .news-summary {
+            .news-summary {{
                 margin-left: 0;
-            }
+            }}
 
-            .news-footer {
+            .news-footer {{
                 margin-left: 0;
-            }
+            }}
 
-            .news-card {
+            .news-card {{
                 padding: 15px;
-            }
-        }
+            }}
+        }}
     </style>
 </head>
 <body>
@@ -411,32 +411,32 @@ class HtmlGenerator:
     </footer>
 
     <script>
-        function toggleTheme() {
+        function toggleTheme() {{
             const html = document.documentElement;
             const currentTheme = html.getAttribute("data-theme");
             const newTheme = currentTheme === "light" ? "dark" : "light";
             html.setAttribute("data-theme", newTheme);
             localStorage.setItem("theme", newTheme);
             updateThemeButton(newTheme);
-        }
+        }}
 
-        function updateThemeButton(theme) {
+        function updateThemeButton(theme) {{
             const icon = document.getElementById("theme-icon");
             const text = document.getElementById("theme-text");
-            if (theme === "light") {
+            if (theme === "light") {{
                 icon.textContent = "☀️";
                 text.textContent = "浅色";
-            } else {
+            }} else {{
                 icon.textContent = "🌙";
                 text.textContent = "深色";
-            }
-        }
+            }}
+        }}
 
-        (function() {
+        (function() {{
             const savedTheme = localStorage.getItem("theme") || "dark";
             document.documentElement.setAttribute("data-theme", savedTheme);
             updateThemeButton(savedTheme);
-        })();
+        }})();
     </script>
 </body>
 </html>"""
@@ -486,7 +486,7 @@ class HtmlGenerator:
     <title>科技新闻日报 - 历史归档</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📁</text></svg>">
     <style>
-        :root {
+        :root {{
             --bg-primary: #0d1117;
             --bg-secondary: #161b22;
             --bg-card: #21262d;
@@ -497,9 +497,9 @@ class HtmlGenerator:
             --accent-hover: #79b8ff;
             --border: #30363d;
             --shadow: rgba(0, 0, 0, 0.3);
-        }
+        }}
 
-        [data-theme="light"] {
+        [data-theme="light"] {{
             --bg-primary: #f6f8fa;
             --bg-secondary: #ffffff;
             --bg-card: #ffffff;
@@ -510,31 +510,31 @@ class HtmlGenerator:
             --accent-hover: #0550ae;
             --border: #d0d7de;
             --shadow: rgba(0, 0, 0, 0.1);
-        }
+        }}
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+        * {{ margin: 0; padding: 0; box-sizing: border-box; }}
 
-        body {
+        body {{
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", Helvetica, Arial, sans-serif;
             background: var(--bg-primary);
             color: var(--text-primary);
             min-height: 100vh;
-        }
+        }}
 
-        .container { max-width: 800px; margin: 0 auto; padding: 0 20px; }
+        .container {{ max-width: 800px; margin: 0 auto; padding: 0 20px; }}
 
-        header {
+        header {{
             background: var(--bg-secondary);
             border-bottom: 1px solid var(--border);
             padding: 20px 0;
             text-align: center;
-        }
+        }}
 
-        h1 { font-size: 24px; margin-bottom: 8px; }
+        h1 {{ font-size: 24px; margin-bottom: 8px; }}
 
-        .subtitle { color: var(--text-secondary); font-size: 14px; }
+        .subtitle {{ color: var(--text-secondary); font-size: 14px; }}
 
-        .theme-toggle {
+        .theme-toggle {{
             position: fixed;
             top: 20px;
             right: 20px;
@@ -550,15 +550,15 @@ class HtmlGenerator:
             gap: 6px;
             transition: all 0.2s;
             z-index: 100;
-        }
+        }}
 
-        .theme-toggle:hover { background: var(--border); }
+        .theme-toggle:hover {{ background: var(--border); }}
 
-        main { padding: 30px 0; }
+        main {{ padding: 30px 0; }}
 
-        .archive-list { display: grid; gap: 12px; }
+        .archive-list {{ display: grid; gap: 12px; }}
 
-        .archive-card {
+        .archive-card {{
             display: flex;
             align-items: center;
             gap: 20px;
@@ -568,35 +568,35 @@ class HtmlGenerator:
             padding: 16px 20px;
             text-decoration: none;
             transition: all 0.2s;
-        }
+        }}
 
-        .archive-card:hover {
+        .archive-card:hover {{
             border-color: var(--accent);
             transform: translateX(5px);
-        }
+        }}
 
-        .archive-date {
+        .archive-date {{
             display: flex;
             flex-direction: column;
             align-items: center;
             min-width: 50px;
-        }
+        }}
 
-        .date-num { font-size: 28px; font-weight: 700; color: var(--accent); line-height: 1; }
-        .date-month { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+        .date-num {{ font-size: 28px; font-weight: 700; color: var(--accent); line-height: 1; }}
+        .date-month {{ font-size: 12px; color: var(--text-muted); margin-top: 4px; }}
 
-        .archive-info { flex: 1; }
-        .archive-info h3 { font-size: 16px; color: var(--text-primary); }
-        .weekday { font-size: 13px; color: var(--text-muted); }
+        .archive-info {{ flex: 1; }}
+        .archive-info h3 {{ font-size: 16px; color: var(--text-primary); }}
+        .weekday {{ font-size: 13px; color: var(--text-muted); }}
 
-        .arrow { color: var(--text-muted); font-size: 18px; }
+        .arrow {{ color: var(--text-muted); font-size: 18px; }}
 
-        footer {
+        footer {{
             text-align: center;
             padding: 30px 0;
             color: var(--text-muted);
             font-size: 13px;
-        }
+        }}
     </style>
 </head>
 <body>
@@ -625,32 +625,32 @@ class HtmlGenerator:
     </footer>
 
     <script>
-        function toggleTheme() {
+        function toggleTheme() {{
             const html = document.documentElement;
             const currentTheme = html.getAttribute("data-theme");
             const newTheme = currentTheme === "light" ? "dark" : "light";
             html.setAttribute("data-theme", newTheme);
             localStorage.setItem("theme", newTheme);
             updateThemeButton(newTheme);
-        }
+        }}
 
-        function updateThemeButton(theme) {
+        function updateThemeButton(theme) {{
             const icon = document.getElementById("theme-icon");
             const text = document.getElementById("theme-text");
-            if (theme === "light") {
+            if (theme === "light") {{
                 icon.textContent = "☀️";
                 text.textContent = "浅色";
-            } else {
+            }} else {{
                 icon.textContent = "🌙";
                 text.textContent = "深色";
-            }
-        }
+            }}
+        }}
 
-        (function() {
+        (function() {{
             const savedTheme = localStorage.getItem("theme") || "dark";
             document.documentElement.setAttribute("data-theme", savedTheme);
             updateThemeButton(savedTheme);
-        })();
+        }})();
     </script>
 </body>
 </html>"""
