@@ -3,7 +3,7 @@ description: 每日科技新闻 & 个人技术博客
 author: leonce28
 email: your-email@example.com
 url: "https://leonce28.github.io"
-baseurl: "/daily-tech-news"
+baseurl: ""
 
 github_username: leonce28
 twitter_username: 
