@@ -1,3 +1,4 @@
+import json
 import logging
 import re
 from typing import List
@@ -24,99 +25,90 @@ class XiaoHongShuScraper(BaseScraper):
             soup = BeautifulSoup(response.content, "lxml")
             news_list: List[NewsItem] = []
 
-            note_cards = soup.find_all("div", class_=re.compile(r"note-card"))
+            scripts = soup.find_all("script")
+            for script in scripts:
+                if script.string and "window.__INITIAL_STATE__" in script.string:
+                    data = self._parse_initial_state(script.string)
+                    if data:
+                        news_list = self._extract_from_json_data(data)
+                        break
 
-            if not note_cards:
-                notes = soup.find_all("div", {"data-module": re.compile(r"note|mix")})
-                for note in notes[: self.top_n * 2]:
-                    if len(news_list) >= self.top_n:
-                        break
-                    item = self._parse_note(note)
-                    if item:
-                        news_list.append(item)
-            else:
-                for card in note_cards[: self.top_n * 2]:
-                    if len(news_list) >= self.top_n:
-                        break
-                    item = self._parse_note_card(card)
-                    if item:
-                        news_list.append(item)
+            if not news_list:
+                news_list = self._fallback_parse(soup)
 
             logger.info(f"[{self.name}] Fetched {len(news_list)} items")
-            return news_list
+            return news_list[: self.top_n]
         except Exception as e:
             logger.error(f"[{self.name}] Failed to parse page: {e}")
             return []
 
-    def _parse_note_card(self, card) -> NewsItem | None:
+    def _parse_initial_state(self, script_content: str) -> dict | None:
         try:
-            title_elem = card.find("h3") or card.find("a", class_=re.compile(r"title"))
+            match = re.search(
+                r"window\.__INITIAL_STATE__\s*=\s*({.*?});",
+                script_content,
+                re.DOTALL,
+            )
+            if match:
+                return json.loads(match.group(1))
+        except Exception as e:
+            logger.debug(f"Failed to parse initial state: {e}")
+        return None
+
+    def _extract_from_json_data(self, data: dict) -> List[NewsItem]:
+        news_list: List[NewsItem] = []
+        try:
+            if "note" in data:
+                notes = data["note"]
+                for note_id, note_data in notes.items():
+                    if isinstance(note_data, dict):
+                        title = note_data.get("title", "")
+                        url = f"https://www.xiaohongshu.com/explore/{note_id}"
+                        if title:
+                            news_list.append(
+                                NewsItem(
+                                    title=self.clean_text(title),
+                                    url=url,
+                                    summary="",
+                                )
+                            )
+        except Exception as e:
+            logger.debug(f"Failed to extract from JSON: {e}")
+        return news_list
+
+    def _fallback_parse(self, soup: BeautifulSoup) -> List[NewsItem]:
+        news_list: List[NewsItem] = []
+
+        items = soup.find_all("a", href=re.compile(r"/explore/[a-zA-Z0-9]+"))
+        seen_urls = set()
+        for item in items:
+            href = item.get("href", "")
+            if href in seen_urls:
+                continue
+            seen_urls.add(href)
+
             title = ""
+            title_elem = item.find("span") or item.find("p") or item
             if title_elem:
                 title = title_elem.get_text(strip=True)
 
             if not title:
-                img_elem = card.find("img")
-                if img_elem and img_elem.get("alt"):
-                    title = img_elem.get("alt", "")[:100]
+                img = item.find("img")
+                if img and img.get("alt"):
+                    title = img.get("alt", "")[:100]
 
-            link_elem = card.find("a", href=re.compile(r"/explore/"))
-            url = ""
-            if link_elem:
-                href = link_elem.get("href", "")
-                if href:
-                    url = (
-                        "https://www.xiaohongshu.com" + href
-                        if not href.startswith("http")
-                        else href
-                    )
-
-            if not title or not url:
-                return None
-
-            like_elem = card.find(string=re.compile(r"\d+"))
-            summary = ""
-            if like_elem:
-                summary = f"点赞: {like_elem.strip()}"
-
-            return NewsItem(
-                title=self.clean_text(title),
-                url=url,
-                summary=summary,
-            )
-        except Exception as e:
-            logger.debug(f"Failed to parse note card: {e}")
-            return None
-
-    def _parse_note(self, note) -> NewsItem | None:
-        try:
-            title = ""
-            url = ""
-
-            link = note.find("a", href=re.compile(r"/explore/"))
-            if link:
-                href = link.get("href", "")
+            if title and href:
                 url = (
                     "https://www.xiaohongshu.com" + href
                     if not href.startswith("http")
                     else href
                 )
-                title_elem = link.find("span") or link.find("p") or link
-                if title_elem:
-                    title = title_elem.get_text(strip=True)
+                news_list.append(
+                    NewsItem(
+                        title=self.clean_text(title),
+                        url=url,
+                        summary="",
+                    )
+                )
 
-            img = note.find("img")
-            if not title and img and img.get("alt"):
-                title = img.get("alt", "")[:100]
-
-            if not title or not url:
-                return None
-
-            return NewsItem(
-                title=self.clean_text(title),
-                url=url,
-                summary="",
-            )
-        except Exception as e:
-            logger.debug(f"Failed to parse note: {e}")
-            return None
+        return news_list
