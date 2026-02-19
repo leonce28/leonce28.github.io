@@ -9,8 +9,8 @@ logger = logging.getLogger(__name__)
 
 class XiaoHongShuScraper(BaseScraper):
     def __init__(self, top_n: int = 10):
-        super().__init__("小红书", top_n)
-        self.api_url = "https://api.lolimi.cn/API/jhrb/?hot=小红书"
+        super().__init__("潮流趋势", top_n)
+        self.api_url = "https://api.lolimi.cn/API/jhrb/?hot=微博"
 
     def fetch(self) -> List[NewsItem]:
         response = RequestHelper.fetch_with_retry(self.api_url)
