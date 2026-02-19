@@ -9,7 +9,7 @@ from src.scrapers import (
     HackerNewsScraper,
     InfoQScraper,
     Kr36Scraper,
-    XiaoHongShuScraper,
+    SspaiScraper,
 )
 
 logging.basicConfig(
@@ -29,7 +29,7 @@ def main():
         HackerNewsScraper(top_n=10),
         Kr36Scraper(top_n=10),
         InfoQScraper(top_n=10),
-        XiaoHongShuScraper(top_n=10),
+        SspaiScraper(top_n=10),
     ]
 
     all_news = {}
