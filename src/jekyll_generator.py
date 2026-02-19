@@ -1,13 +1,14 @@
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from typing import Dict, List
 from pathlib import Path
 
 
 class JekyllGenerator:
     def __init__(self):
-        self.date = datetime.now()
-        self.date_str = self.date.strftime("%Y-%m-%d")
-        self.datetime_str = self.date.strftime("%Y-%m-%d %H:%M:%S +0800")
+        self.date = datetime.now(timezone.utc)
+        self.date_cn = self.date.astimezone(timezone(timedelta(hours=8)))
+        self.date_str = self.date_cn.strftime("%Y-%m-%d")
+        self.datetime_str = self.date_cn.strftime("%Y-%m-%d %H:%M:%S +0800")
 
     def generate_news_post(self, all_news: Dict[str, List[Dict]]) -> str:
         sources_yaml = ""
