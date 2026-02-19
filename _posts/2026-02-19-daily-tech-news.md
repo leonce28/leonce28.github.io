@@ -1,6 +1,6 @@
 ---
 title: "科技新闻日报 2026-02-19"
-date: 2026-02-19 15:25:55 +0800
+date: 2026-02-19 15:27:30 +0800
 categories: [News]
 tags: [news, daily-news]
 description: "每日自动抓取 Hacker News、36氪、InfoQ、少数派的热门科技新闻。"
@@ -20,11 +20,11 @@ sources:
 <ol>
 <li>
 <strong><a href="https://pudding.cool/2026/02/womens-sizing/" target="_blank" rel="noopener">Sizing chaos</a></strong>
-<br><span class="meta">454 pts | <a href="https://news.ycombinator.com/item?id=47066552" target="_blank">235 评论</a></span>
+<br><span class="meta">456 pts | <a href="https://news.ycombinator.com/item?id=47066552" target="_blank">235 评论</a></span>
 </li>
 <li>
 <strong><a href="https://old.reddit.com/r/MacOS/comments/1r8900z/macos_which_officially_supports_27_year_old/" target="_blank" rel="noopener">27-year-old Apple iBooks can connect to Wi-Fi and download official updates</a></strong>
-<br><span class="meta">284 pts | <a href="https://news.ycombinator.com/item?id=47066241" target="_blank">144 评论</a></span>
+<br><span class="meta">286 pts | <a href="https://news.ycombinator.com/item?id=47066241" target="_blank">144 评论</a></span>
 </li>
 <li>
 <strong><a href="https://nicolasdickenmann.com/blog/the-great-fp64-divide.html" target="_blank" rel="noopener">15 years of FP64 segmentation, and why the Blackwell Ultra breaks the pattern</a></strong>
@@ -32,11 +32,11 @@ sources:
 </li>
 <li>
 <strong><a href="https://code.claude.com/docs/en/legal-and-compliance" target="_blank" rel="noopener">Anthropic officially bans using subscription auth for third party use</a></strong>
-<br><span class="meta">256 pts | <a href="https://news.ycombinator.com/item?id=47069299" target="_blank">268 评论</a></span>
+<br><span class="meta">256 pts | <a href="https://news.ycombinator.com/item?id=47069299" target="_blank">270 评论</a></span>
 </li>
 <li>
 <strong><a href="https://jasonfantl.com/posts/Universal-Unique-IDs/" target="_blank" rel="noopener">Cosmologically Unique IDs</a></strong>
-<br><span class="meta">345 pts | <a href="https://news.ycombinator.com/item?id=47064490" target="_blank">109 评论</a></span>
+<br><span class="meta">345 pts | <a href="https://news.ycombinator.com/item?id=47064490" target="_blank">110 评论</a></span>
 </li>
 <li>
 <strong><a href="https://stoolap.io/blog/2026/02/19/introducing-stoolap-node/" target="_blank" rel="noopener">Stoolap/Node: A Native Node.js Driver That&#x27;s Surprisingly Fast</a></strong>
@@ -52,7 +52,7 @@ sources:
 </li>
 <li>
 <strong><a href="https://tailscale.com/blog/peer-relays-ga" target="_blank" rel="noopener">Tailscale Peer Relays is now generally available</a></strong>
-<br><span class="meta">381 pts | <a href="https://news.ycombinator.com/item?id=47063005" target="_blank">190 评论</a></span>
+<br><span class="meta">382 pts | <a href="https://news.ycombinator.com/item?id=47063005" target="_blank">190 评论</a></span>
 </li>
 <li>
 <strong><a href="https://chromereleases.googleblog.com/2026/02/stable-channel-update-for-desktop_13.html" target="_blank" rel="noopener">Zero-day CSS: CVE-2026-2441 exists in the wild</a></strong>
