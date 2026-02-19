@@ -106,6 +106,6 @@ jobs:
 
 完整代码已经开源在 GitHub：
 
-[https://github.com/leonce28/daily-tech-news](https://github.com/leonce28/daily-tech-news)
+[https://github.com/leonce28/leonce28.github.io](https://github.com/leonce28/leonce28.github.io)
 
 欢迎 Star ⭐

@@ -2,6 +2,7 @@
 .hero {
     background: var(--bg-secondary);
     padding: $spacing-xxl 0;
+    padding-top: calc($spacing-xxl + 60px);
     text-align: center;
     border-bottom: 1px solid var(--border);
     

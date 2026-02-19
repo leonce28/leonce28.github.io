@@ -5,7 +5,7 @@ icon: 📰
 description: 自动抓取每日科技新闻，生成静态页面
 tech: Python
 stars: 1
-github: https://github.com/leonce28/daily-tech-news
+github: https://github.com/leonce28/leonce28.github.io
 ---
 
 ## 项目简介
@@ -50,7 +50,7 @@ daily-tech-news/
 
 ## 查看效果
 
-- [在线预览](https://leonce28.github.io/daily-tech-news)
-- [源码地址](https://github.com/leonce28/daily-tech-news)
+- [在线预览](https://leonce28.github.io)
+- [源码地址](https://github.com/leonce28/leonce28.github.io)
 
 欢迎 Star 和 Fork！⭐
