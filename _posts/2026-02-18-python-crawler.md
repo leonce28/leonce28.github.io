@@ -1,10 +1,10 @@
 ---
-layout: post
 title: "Python 爬虫实战：自动抓取每日科技新闻"
-date: 2026-02-18
-categories: [教程]
-tags: [Python, 爬虫, 自动化, GitHub Actions]
-excerpt: "使用 Python 定时抓取科技新闻，并自动生成静态页面。"
+date: 2026-02-18 10:00:00 +0800
+categories: [Tutorial]
+tags: [python, crawler, automation, github-actions]
+description: "使用 Python 定时抓取科技新闻，并自动生成静态页面。"
+author: leonce28
 ---
 
 ## 项目背景

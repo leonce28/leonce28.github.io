@@ -1,304 +1,95 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="https://leonce28.github.io/daily-tech-news/feed.xml" rel="self" type="application/atom+xml" /><link href="https://leonce28.github.io/daily-tech-news/" rel="alternate" type="text/html" hreflang="zh-CN" /><updated>2026-02-19T12:14:16+08:00</updated><id>https://leonce28.github.io/daily-tech-news/feed.xml</id><title type="html">Tech News Daily</title><subtitle>每日科技新闻 &amp; 个人技术博客</subtitle><author><name>leonce28</name></author><entry><title type="html">欢迎来到我的博客</title><link href="https://leonce28.github.io/daily-tech-news/blog/2026-02-19-welcome/" rel="alternate" type="text/html" title="欢迎来到我的博客" /><published>2026-02-19T00:00:00+08:00</published><updated>2026-02-19T00:00:00+08:00</updated><id>https://leonce28.github.io/daily-tech-news/blog/welcome</id><content type="html" xml:base="https://leonce28.github.io/daily-tech-news/blog/2026-02-19-welcome/"><![CDATA[<h2 id="-你好">👋 你好！</h2>
 
-<p>欢迎来到我的个人技术博客！这是我在这里的第一篇文章。</p>
 
-<h2 id="为什么写博客">为什么写博客</h2>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>http://0.0.0.0:4000/</id>
+  <title>Tech News Daily</title>
+  <subtitle>每日自动抓取科技新闻，分享技术文章和项目经验。</subtitle>
+  <updated>2026-02-19T12:53:26+08:00</updated>
+  <author>
+    <name>leonce28</name>
+    <uri>http://0.0.0.0:4000/</uri>
+  </author>
+  <link rel="self" type="application/atom+xml" href="http://0.0.0.0:4000/feed.xml"/>
+  <link rel="alternate" type="text/html" hreflang="zh-CN"
+    href="http://0.0.0.0:4000/"/>
+  <generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator>
+  <rights> © 2026 leonce28 </rights>
+  <icon>/assets/img/favicons/favicon.ico</icon>
+  <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
-<p>写博客有很多好处：</p>
 
-<ol>
-  <li><strong>记录学习过程</strong> - 将学到的知识记录下来，方便日后查阅</li>
-  <li><strong>分享知识</strong> - 将经验分享给他人，帮助更多开发者</li>
-  <li><strong>提升表达能力</strong> - 写作是一种很好的锻炼思维方式</li>
-  <li><strong>建立个人品牌</strong> - 持续输出高质量内容，建立技术影响力</li>
-</ol>
+  
+  <entry>
+    <title>欢迎来到我的博客</title>
+    <link href="http://0.0.0.0:4000/posts/welcome/" rel="alternate" type="text/html" title="欢迎来到我的博客" />
+    <published>2026-02-19T10:00:00+08:00</published>
+  
+    <updated>2026-02-19T10:00:00+08:00</updated>
+  
+    <id>http://0.0.0.0:4000/posts/welcome/</id>
+    <content type="text/html" src="http://0.0.0.0:4000/posts/welcome/" />
+    <author>
+      <name>leonce28</name>
+    </author>
 
-<h2 id="这个博客的技术栈">这个博客的技术栈</h2>
+  
+    
+    <category term="Diary" />
+    
+  
 
-<p>本博客使用以下技术构建：</p>
+  <summary>这是我的第一篇博客文章，欢迎来到我的个人技术博客！</summary>
 
-<ul>
-  <li><strong>Jekyll</strong> - 静态网站生成器</li>
-  <li><strong>GitHub Pages</strong> - 免费托管服务</li>
-  <li><strong>SCSS</strong> - CSS 预处理器</li>
-  <li><strong>GitHub Actions</strong> - 自动化部署</li>
-</ul>
+  </entry>
 
-<h2 id="博客内容">博客内容</h2>
+  
+  <entry>
+    <title>Python 爬虫实战：自动抓取每日科技新闻</title>
+    <link href="http://0.0.0.0:4000/posts/python-crawler/" rel="alternate" type="text/html" title="Python 爬虫实战：自动抓取每日科技新闻" />
+    <published>2026-02-18T10:00:00+08:00</published>
+  
+    <updated>2026-02-19T12:33:29+08:00</updated>
+  
+    <id>http://0.0.0.0:4000/posts/python-crawler/</id>
+    <content type="text/html" src="http://0.0.0.0:4000/posts/python-crawler/" />
+    <author>
+      <name>leonce28</name>
+    </author>
 
-<p>我会在这里分享：</p>
+  
+    
+    <category term="Tutorial" />
+    
+  
 
-<ul>
-  <li>📰 <strong>每日科技新闻</strong> - 自动抓取最新科技资讯</li>
-  <li>💻 <strong>技术文章</strong> - 编程技巧、工具使用、框架学习</li>
-  <li>🚀 <strong>项目分享</strong> - 开源项目介绍和使用教程</li>
-  <li>📝 <strong>学习笔记</strong> - 读书笔记、课程总结</li>
-</ul>
+  <summary>使用 Python 定时抓取科技新闻，并自动生成静态页面。</summary>
 
-<h2 id="联系我">联系我</h2>
+  </entry>
 
-<p>如果你有任何问题或建议，欢迎通过以下方式联系我：</p>
+  
+  <entry>
+    <title>Jekyll 博客搭建指南</title>
+    <link href="http://0.0.0.0:4000/posts/jekyll-blog/" rel="alternate" type="text/html" title="Jekyll 博客搭建指南" />
+    <published>2026-02-17T10:00:00+08:00</published>
+  
+    <updated>2026-02-17T10:00:00+08:00</updated>
+  
+    <id>http://0.0.0.0:4000/posts/jekyll-blog/</id>
+    <content type="text/html" src="http://0.0.0.0:4000/posts/jekyll-blog/" />
+    <author>
+      <name>leonce28</name>
+    </author>
 
-<ul>
-  <li><a href="https://github.com/leonce28">GitHub</a></li>
-  <li>邮箱：your-email@example.com</li>
-</ul>
+  
+    
+    <category term="Tutorial" />
+    
+  
 
-<p>感谢你的访问！🎉</p>]]></content><author><name>leonce28</name></author><category term="随笔" /><category term="博客" /><category term="Jekyll" /><category term="GitHub Pages" /><summary type="html"><![CDATA[这是我的第一篇博客文章，欢迎来到我的个人技术博客！]]></summary></entry><entry><title type="html">Python 爬虫实战：自动抓取每日科技新闻</title><link href="https://leonce28.github.io/daily-tech-news/blog/2026-02-18-python-crawler/" rel="alternate" type="text/html" title="Python 爬虫实战：自动抓取每日科技新闻" /><published>2026-02-18T00:00:00+08:00</published><updated>2026-02-18T00:00:00+08:00</updated><id>https://leonce28.github.io/daily-tech-news/blog/python-crawler</id><content type="html" xml:base="https://leonce28.github.io/daily-tech-news/blog/2026-02-18-python-crawler/"><![CDATA[<h2 id="项目背景">项目背景</h2>
+  <summary>从零开始搭建一个漂亮的 Jekyll 博客。</summary>
 
-<p>每天打开电脑，第一件事就是浏览各大科技网站了解最新动态。但是逐个打开网站太麻烦了，不如写个爬虫自动抓取！</p>
+  </entry>
 
-<h2 id="技术方案">技术方案</h2>
+</feed>
 
-<h3 id="爬虫部分">爬虫部分</h3>
 
-<p>使用 Python 的 <code class="language-plaintext highlighter-rouge">requests</code> 和 <code class="language-plaintext highlighter-rouge">BeautifulSoup</code> 库进行网页抓取：</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="n">requests</span>
-<span class="kn">from</span> <span class="n">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>
-
-<span class="k">def</span> <span class="nf">fetch_news</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
-    <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
-        <span class="sh">'</span><span class="s">User-Agent</span><span class="sh">'</span><span class="p">:</span> <span class="sh">'</span><span class="s">Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0</span><span class="sh">'</span>
-    <span class="p">}</span>
-    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
-    <span class="n">soup</span> <span class="o">=</span> <span class="nc">BeautifulSoup</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="n">text</span><span class="p">,</span> <span class="sh">'</span><span class="s">lxml</span><span class="sh">'</span><span class="p">)</span>
-    <span class="c1"># 解析新闻内容...
-</span>    <span class="k">return</span> <span class="n">news_list</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
-
-<h3 id="反爬机制">反爬机制</h3>
-
-<p>为了避免被封禁，需要加入一些反爬措施：</p>
-
-<ul>
-  <li>随机 User-Agent</li>
-  <li>请求延时</li>
-  <li>失败重试</li>
-</ul>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="n">random</span>
-<span class="kn">import</span> <span class="n">time</span>
-
-<span class="n">USER_AGENTS</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="sh">'</span><span class="s">Mozilla/5.0 (Windows...)</span><span class="sh">'</span><span class="p">,</span>
-    <span class="sh">'</span><span class="s">Mozilla/5.0 (Macintosh...)</span><span class="sh">'</span><span class="p">,</span>
-    <span class="c1"># 更多 UA...
-</span><span class="p">]</span>
-
-<span class="k">def</span> <span class="nf">get_headers</span><span class="p">():</span>
-    <span class="k">return</span> <span class="p">{</span>
-        <span class="sh">'</span><span class="s">User-Agent</span><span class="sh">'</span><span class="p">:</span> <span class="n">random</span><span class="p">.</span><span class="nf">choice</span><span class="p">(</span><span class="n">USER_AGENTS</span><span class="p">)</span>
-    <span class="p">}</span>
-
-<span class="k">def</span> <span class="nf">fetch_with_retry</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">max_retries</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">attempt</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="n">max_retries</span><span class="p">):</span>
-        <span class="k">try</span><span class="p">:</span>
-            <span class="n">time</span><span class="p">.</span><span class="nf">sleep</span><span class="p">(</span><span class="n">random</span><span class="p">.</span><span class="nf">uniform</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
-            <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="nf">get_headers</span><span class="p">())</span>
-            <span class="k">if</span> <span class="n">response</span><span class="p">.</span><span class="n">status_code</span> <span class="o">==</span> <span class="mi">200</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">response</span>
-        <span class="k">except</span> <span class="nb">Exception</span><span class="p">:</span>
-            <span class="n">time</span><span class="p">.</span><span class="nf">sleep</span><span class="p">(</span><span class="mi">2</span> <span class="o">**</span> <span class="n">attempt</span><span class="p">)</span>
-    <span class="k">return</span> <span class="bp">None</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
-
-<h3 id="自动化部署">自动化部署</h3>
-
-<p>使用 GitHub Actions 实现每日自动运行：</p>
-
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-</pre></td><td class="rouge-code"><pre><span class="na">name</span><span class="pi">:</span> <span class="s">Daily Tech News</span>
-
-<span class="na">on</span><span class="pi">:</span>
-  <span class="na">schedule</span><span class="pi">:</span>
-    <span class="pi">-</span> <span class="na">cron</span><span class="pi">:</span> <span class="s1">'</span><span class="s">0</span><span class="nv"> </span><span class="s">0</span><span class="nv"> </span><span class="s">*</span><span class="nv"> </span><span class="s">*</span><span class="nv"> </span><span class="s">*'</span>  <span class="c1"># UTC 0:00 = 北京时间 8:00</span>
-
-<span class="na">jobs</span><span class="pi">:</span>
-  <span class="na">fetch-news</span><span class="pi">:</span>
-    <span class="na">runs-on</span><span class="pi">:</span> <span class="s">ubuntu-latest</span>
-    <span class="na">steps</span><span class="pi">:</span>
-      <span class="pi">-</span> <span class="na">uses</span><span class="pi">:</span> <span class="s">actions/checkout@v4</span>
-      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Fetch news</span>
-        <span class="na">run</span><span class="pi">:</span> <span class="s">python src/main.py</span>
-      <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s">Commit changes</span>
-        <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
-          <span class="s">git config user.name "github-actions[bot]"</span>
-          <span class="s">git commit -am "docs: update news"</span>
-          <span class="s">git push</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
-
-<h2 id="成果展示">成果展示</h2>
-
-<p>项目已经运行起来了，每天自动抓取以下网站的热门新闻：</p>
-
-<ul>
-  <li>Hacker News</li>
-  <li>36氪</li>
-  <li>InfoQ</li>
-  <li>少数派</li>
-</ul>
-
-<p>生成的新闻页面支持深色/浅色主题切换，响应式设计，体验不错！</p>
-
-<h2 id="源码地址">源码地址</h2>
-
-<p>完整代码已经开源在 GitHub：</p>
-
-<p><a href="https://github.com/leonce28/daily-tech-news">https://github.com/leonce28/daily-tech-news</a></p>
-
-<p>欢迎 Star ⭐</p>]]></content><author><name>leonce28</name></author><category term="教程" /><category term="Python" /><category term="爬虫" /><category term="自动化" /><category term="GitHub Actions" /><summary type="html"><![CDATA[使用 Python 定时抓取科技新闻，并自动生成静态页面。]]></summary></entry><entry><title type="html">Jekyll 博客搭建指南</title><link href="https://leonce28.github.io/daily-tech-news/blog/2026-02-17-jekyll-blog/" rel="alternate" type="text/html" title="Jekyll 博客搭建指南" /><published>2026-02-17T00:00:00+08:00</published><updated>2026-02-17T00:00:00+08:00</updated><id>https://leonce28.github.io/daily-tech-news/blog/jekyll-blog</id><content type="html" xml:base="https://leonce28.github.io/daily-tech-news/blog/2026-02-17-jekyll-blog/"><![CDATA[<h2 id="为什么选择-jekyll">为什么选择 Jekyll</h2>
-
-<p>Jekyll 是一个简单的静态网站生成器，非常适合用来搭建博客：</p>
-
-<ul>
-  <li><strong>免费托管</strong> - GitHub Pages 免费提供</li>
-  <li><strong>简单易用</strong> - Markdown 写文章</li>
-  <li><strong>高度可定制</strong> - 主题、插件丰富</li>
-  <li><strong>SEO 友好</strong> - 静态页面加载快</li>
-</ul>
-
-<h2 id="安装-jekyll">安装 Jekyll</h2>
-
-<h3 id="环境要求">环境要求</h3>
-
-<ul>
-  <li>Ruby 2.5+</li>
-  <li>RubyGems</li>
-  <li>GCC 和 Make</li>
-</ul>
-
-<h3 id="安装步骤">安装步骤</h3>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-</pre></td><td class="rouge-code"><pre><span class="c"># 安装 Jekyll 和 Bundler</span>
-gem <span class="nb">install </span>jekyll bundler
-
-<span class="c"># 创建新项目</span>
-jekyll new my-blog
-
-<span class="c"># 进入目录</span>
-<span class="nb">cd </span>my-blog
-
-<span class="c"># 启动本地服务器</span>
-bundle <span class="nb">exec </span>jekyll serve
-</pre></td></tr></tbody></table></code></pre></div></div>
-
-<p>打开浏览器访问 <code class="language-plaintext highlighter-rouge">http://localhost:4000</code> 即可预览。</p>
-
-<h2 id="目录结构">目录结构</h2>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-</pre></td><td class="rouge-code"><pre>my-blog/
-├── _config.yml      # 配置文件
-├── _posts/          # 博客文章
-├── _layouts/        # 布局模板
-├── _includes/       # 可复用组件
-├── _sass/           # 样式文件
-├── assets/          # 静态资源
-└── index.html       # 首页
-</pre></td></tr></tbody></table></code></pre></div></div>
-
-<h2 id="写文章">写文章</h2>
-
-<p>在 <code class="language-plaintext highlighter-rouge">_posts</code> 目录下创建文件，命名格式为 <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-title.md</code>：</p>
-
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-2
-3
-4
-5
-6
-7
-8
-</pre></td><td class="rouge-code"><pre><span class="nn">---</span>
-<span class="na">layout</span><span class="pi">:</span> <span class="s">post</span>
-<span class="na">title</span><span class="pi">:</span> <span class="s2">"</span><span class="s">我的第一篇文章"</span>
-<span class="na">date</span><span class="pi">:</span> <span class="s">2026-02-17</span>
-<span class="na">tags</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">博客</span><span class="pi">]</span>
-<span class="nn">---</span>
-
-这是文章内容...
-</pre></td></tr></tbody></table></code></pre></div></div>
-
-<h2 id="部署到-github-pages">部署到 GitHub Pages</h2>
-
-<ol>
-  <li>创建 GitHub 仓库 <code class="language-plaintext highlighter-rouge">username.github.io</code></li>
-  <li>推送代码</li>
-  <li>在仓库设置中启用 GitHub Pages</li>
-  <li>访问 <code class="language-plaintext highlighter-rouge">https://username.github.io</code></li>
-</ol>
-
-<h2 id="总结">总结</h2>
-
-<p>Jekyll 是搭建个人博客的绝佳选择，结合 GitHub Pages 可以实现免费、稳定的博客服务。快去试试吧！</p>]]></content><author><name>leonce28</name></author><category term="教程" /><category term="Jekyll" /><category term="GitHub Pages" /><category term="博客" /><summary type="html"><![CDATA[从零开始搭建一个漂亮的 Jekyll 博客。]]></summary></entry></feed>

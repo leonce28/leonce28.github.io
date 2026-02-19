@@ -7,6 +7,7 @@ class JekyllGenerator:
     def __init__(self):
         self.date = datetime.now()
         self.date_str = self.date.strftime("%Y-%m-%d")
+        self.datetime_str = self.date.strftime("%Y-%m-%d %H:%M:%S +0800")
 
     def generate_news_post(self, all_news: Dict[str, List[Dict]]) -> str:
         sources_yaml = ""
@@ -17,10 +18,13 @@ class JekyllGenerator:
                 )
 
         front_matter = f"""---
-layout: news
-title: 科技新闻日报
-date: {self.date_str}
-categories: [news]
+title: "科技新闻日报 {self.date_str}"
+date: {self.datetime_str}
+categories: [News]
+tags: [daily-news]
+description: "每日自动抓取 Hacker News、36氪、InfoQ、少数派的热门科技新闻。"
+author: leonce28
+pin: true
 sources:
 {sources_yaml}---
 """
@@ -71,4 +75,4 @@ sources:
         )
 
     def get_filename(self) -> str:
-        return f"_news/{self.date_str}.md"
+        return f"_posts/{self.date_str}-daily-tech-news.md"

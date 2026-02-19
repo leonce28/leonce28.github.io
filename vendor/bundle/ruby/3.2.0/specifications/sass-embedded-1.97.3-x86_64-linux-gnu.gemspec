@@ -19,10 +19,10 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/sass-contrib/sass-embedded-host-ruby".freeze
   s.licenses = ["MIT".freeze]
   s.required_ruby_version = Gem::Requirement.new(">= 3.2".freeze)
-  s.rubygems_version = "3.4.19".freeze
+  s.rubygems_version = "3.4.20".freeze
   s.summary = "Use dart-sass with Ruby!".freeze
 
-  s.installed_by_version = "3.4.19" if s.respond_to? :installed_by_version
+  s.installed_by_version = "3.4.20" if s.respond_to? :installed_by_version
 
   s.specification_version = 4
 

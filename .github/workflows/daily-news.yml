@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  fetch-and-build:
+  fetch-and-deploy:
     runs-on: ubuntu-latest
     
     steps:
@@ -29,24 +29,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Fetch news and generate files
+      - name: Fetch news
         run: python src/main.py
 
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.2'
-          bundler-cache: true
-
-      - name: Build Jekyll site
-        run: |
-          bundle install
-          bundle exec jekyll build
-
-      - name: Commit and push changes
+      - name: Commit changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add .
-          git diff --quiet && git diff --staged --quiet || git commit -m "docs: update site $(date +'%Y-%m-%d')"
+          git diff --quiet && git diff --staged --quiet || git commit -m "docs: add daily news $(date +'%Y-%m-%d')"
           git push

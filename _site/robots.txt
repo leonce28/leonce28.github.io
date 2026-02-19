@@ -1,1 +1,5 @@
-Sitemap: https://leonce28.github.io/daily-tech-news/sitemap.xml
+User-agent: *
+
+Disallow: /norobots/
+
+Sitemap: http://0.0.0.0:4000/sitemap.xml

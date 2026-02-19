@@ -1,74 +1,155 @@
-title: Tech News Daily
-description: 每日科技新闻 & 个人技术博客
-author: leonce28
-email: your-email@example.com
-url: "https://leonce28.github.io"
-baseurl: ""
+# The Site Configuration
 
-github_username: leonce28
-twitter_username: 
+theme: jekyll-theme-chirpy
+
+lang: zh-CN
 
 timezone: Asia/Shanghai
-lang: zh-CN
-locale: zh_CN
+
+title: Tech News Daily
+
+tagline: 每日科技新闻 & 个人技术博客
+
+description: >-
+  每日自动抓取科技新闻，分享技术文章和项目经验。
+
+url: "https://leonce28.github.io"
+
+github:
+  username: leonce28
+
+twitter:
+  username:
+
+social:
+  name: leonce28
+  email: your-email@example.com
+  links:
+    - https://github.com/leonce28
+
+webmaster_verifications:
+  google:
+  bing:
+
+analytics:
+  google:
+    id:
+
+pageviews:
+  provider:
+
+theme_mode:
+
+cdn:
+
+avatar:
+
+social_preview_image:
+
+toc: true
+
+comments:
+  provider:
+  disqus:
+    shortname:
+  utterances:
+    repo:
+    issue_term:
+  giscus:
+    repo:
+    repo_id:
+    category:
+    category_id:
+    mapping:
+    strict:
+    input_position:
+    lang:
+    reactions_enabled:
+
+assets:
+  self_host:
+    enabled:
+    env:
+
+pwa:
+  enabled: true
+  cache:
+    enabled: true
+    deny_paths:
+
+paginate: 10
+
+baseurl: ""
+
+kramdown:
+  footnote_backlink: "&#8617;&#xfe0e;"
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: highlight
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
 
 collections:
-  news:
+  tabs:
     output: true
-    permalink: /news/:path/
-  projects:
-    output: true
-    permalink: /projects/:path/
+    sort_by: order
 
 defaults:
   - scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
-      layout: "post"
-      author: "leonce28"
+      layout: post
       comments: true
+      toc: true
+      permalink: /posts/:title/
+  - scope:
+      path: _drafts
+    values:
+      comments: false
   - scope:
       path: ""
-      type: "news"
+      type: tabs
     values:
-      layout: "news"
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "page"
+      layout: page
+      permalink: /:title/
 
-paginate: 6
-paginate_path: "/blog/page:num/"
+sass:
+  style: compressed
 
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-sitemap
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: [development]
 
 exclude:
+  - "*.gem"
+  - "*.gemspec"
+  - docs
+  - tools
+  - README.md
+  - LICENSE
+  - purgecss.js
+  - "*.config.js"
+  - "package*.json"
   - src/
-  - node_modules/
+  - vendor/
   - Gemfile
   - Gemfile.lock
-  - README.md
   - requirements.txt
-  - vendor/
 
-include:
-  - _pages
-
-markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    block:
-      line_numbers: true
-
-permalink: /blog/:year-:month-:day-:title/
-
-google_analytics: 
-disqus_shortname: 
+jekyll-archives:
+  enabled: [categories, tags]
+  layouts:
+    category: category
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+    category: /categories/:name/

@@ -1,10 +1,10 @@
 ---
-layout: post
 title: "Jekyll 博客搭建指南"
-date: 2026-02-17
-categories: [教程]
-tags: [Jekyll, GitHub Pages, 博客]
-excerpt: "从零开始搭建一个漂亮的 Jekyll 博客。"
+date: 2026-02-17 10:00:00 +0800
+categories: [Tutorial]
+tags: [jekyll, github-pages]
+description: "从零开始搭建一个漂亮的 Jekyll 博客。"
+author: leonce28
 ---
 
 ## 为什么选择 Jekyll

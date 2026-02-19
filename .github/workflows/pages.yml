@@ -1,8 +1,15 @@
-name: Deploy Jekyll site to Pages
-
+name: "Build and Deploy"
 on:
   push:
-    branches: ["master"]
+    branches:
+      - main
+      - master
+    paths-ignore:
+      - .gitignore
+      - README.md
+      - LICENSE
+      - src/
+
   workflow_dispatch:
 
 permissions:
@@ -12,34 +19,37 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        
-      - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.2'
-          bundler-cache: true
-          
+          fetch-depth: 0
+
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
-        
-      - name: Build with Jekyll
-        run: |
-          bundle install
-          bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.3
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
         env:
-          JEKYLL_ENV: production
-          
-      - name: Upload artifact
+          JEKYLL_ENV: "production"
+
+      - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
+        with:
+          path: "_site${{ steps.pages.outputs.base_path }}"
 
   deploy:
     environment:
