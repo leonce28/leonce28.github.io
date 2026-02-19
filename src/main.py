@@ -6,6 +6,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from src.scrapers import HackerNewsScraper, Kr36Scraper, InfoQScraper, SspaiScraper
 from src.generator import MarkdownGenerator
+from src.html_generator import HtmlGenerator
 
 
 def main():
@@ -33,19 +34,31 @@ def main():
             all_news[scraper.name] = []
 
     print("\n" + "=" * 50)
-    print("正在生成 Markdown 文件...")
 
-    generator = MarkdownGenerator()
-    content = generator.generate(all_news)
-    filename = generator.get_filename()
+    base_path = Path(__file__).parent.parent
+    news_dir = base_path / "news"
+    news_dir.mkdir(parents=True, exist_ok=True)
 
-    output_path = Path(__file__).parent.parent / filename
-    output_path.parent.mkdir(parents=True, exist_ok=True)
+    md_generator = MarkdownGenerator()
+    md_content = md_generator.generate(all_news)
+    md_path = base_path / md_generator.get_filename()
+    with open(md_path, "w", encoding="utf-8") as f:
+        f.write(md_content)
+    print(f"[MD] 文件已生成: {md_path}")
 
-    with open(output_path, "w", encoding="utf-8") as f:
-        f.write(content)
+    html_generator = HtmlGenerator()
+    html_content = html_generator.generate(all_news)
+    html_path = base_path / html_generator.get_filename()
+    with open(html_path, "w", encoding="utf-8") as f:
+        f.write(html_content)
+    print(f"[HTML] 文件已生成: {html_path}")
 
-    print(f"文件已生成: {output_path}")
+    index_content = html_generator.generate_index(news_dir)
+    index_path = news_dir / "index.html"
+    with open(index_path, "w", encoding="utf-8") as f:
+        f.write(index_content)
+    print(f"[INDEX] 索引已更新: {index_path}")
+
     print("=" * 50)
 
 

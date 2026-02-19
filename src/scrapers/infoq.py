@@ -15,12 +15,10 @@ class InfoQScraper(BaseScraper):
     def _fetch_via_rss(self) -> List[Dict]:
         response = AntiScraper.fetch_with_retry(
             self.rss_url,
-            extra_headers={
-                "Accept": "application/rss+xml,application/xml,text/xml",
-            },
+            extra_headers={"Accept": "application/rss+xml,application/xml,text/xml"},
         )
         if not response:
-            return self._fetch_via_api()
+            return []
 
         try:
             root = ET.fromstring(response.content)
@@ -32,54 +30,33 @@ class InfoQScraper(BaseScraper):
 
                 title_elem = item.find("title")
                 link_elem = item.find("link")
+                desc_elem = item.find("description")
 
                 if title_elem is not None and link_elem is not None:
                     title = title_elem.text or ""
                     url = link_elem.text or ""
+                    summary = ""
+                    if desc_elem is not None and desc_elem.text:
+                        summary = self._clean_html(desc_elem.text)
+                        if len(summary) > 200:
+                            summary = summary[:200] + "..."
 
                     if title and url:
                         news_list.append(
                             {
                                 "title": self.clean_text(title),
                                 "url": url,
+                                "summary": summary,
                             }
                         )
 
             return news_list
         except Exception:
-            return self._fetch_via_api()
-
-    def _fetch_via_api(self) -> List[Dict]:
-        api_url = "https://www.infoq.cn/public/v1/article/getList"
-        response = AntiScraper.fetch_with_retry(
-            api_url,
-            extra_headers={
-                "Accept": "application/json",
-                "Content-Type": "application/json",
-                "Origin": "https://www.infoq.cn",
-                "Referer": "https://www.infoq.cn/",
-            },
-        )
-
-        if not response:
             return []
 
-        try:
-            data = response.json()
-            news_list = []
-            items = data.get("data", []) or []
+    def _clean_html(self, text: str) -> str:
+        import re
 
-            for item in items[: self.top_n]:
-                uuid = item.get("uuid", "")
-                title = item.get("article_title", "") or item.get("title", "")
-                if title and uuid:
-                    news_list.append(
-                        {
-                            "title": self.clean_text(title),
-                            "url": f"https://www.infoq.cn/article/{uuid}",
-                        }
-                    )
-
-            return news_list
-        except Exception:
-            return []
+        text = re.sub(r"<[^>]+>", "", text)
+        text = re.sub(r"\s+", " ", text)
+        return text.strip()

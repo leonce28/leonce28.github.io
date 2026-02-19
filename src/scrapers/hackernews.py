@@ -28,10 +28,14 @@ class HackerNewsScraper(BaseScraper):
             if item_response:
                 item = item_response.json()
                 if item and item.get("title") and item.get("url"):
+                    summary = self.clean_text(item.get("text", ""))
+                    if summary and len(summary) > 200:
+                        summary = summary[:200] + "..."
                     news_list.append(
                         {
                             "title": self.clean_text(item.get("title", "")),
                             "url": item.get("url", ""),
+                            "summary": summary,
                             "score": item.get("score", 0),
                             "comments": f"https://news.ycombinator.com/item?id={story_id}",
                             "descendants": item.get("descendants", 0),
