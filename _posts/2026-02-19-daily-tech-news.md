@@ -1,6 +1,6 @@
 ---
 title: "科技新闻日报 2026-02-19"
-date: 2026-02-19 14:29:27 +0800
+date: 2026-02-19 15:13:01 +0800
 categories: [News]
 tags: [news, daily-news]
 description: "每日自动抓取 Hacker News、36氪、InfoQ、少数派的热门科技新闻。"
@@ -13,8 +13,6 @@ sources:
     count: 10
   - name: InfoQ
     count: 10
-  - name: 少数派
-    count: 10
 ---
 
 ## Hacker News Top 10
@@ -22,43 +20,43 @@ sources:
 <ol>
 <li>
 <strong><a href="https://eutechmap.com/map" target="_blank" rel="noopener">European Tech Alternatives</a></strong>
-<br><span class="meta">75 pts | <a href="https://news.ycombinator.com/item?id=47070142" target="_blank">29 评论</a></span>
+<br><span class="meta">143 pts | <a href="https://news.ycombinator.com/item?id=47070142" target="_blank">89 评论</a></span>
 </li>
 <li>
 <strong><a href="https://pudding.cool/2026/02/womens-sizing/" target="_blank" rel="noopener">Sizing chaos</a></strong>
-<br><span class="meta">434 pts | <a href="https://news.ycombinator.com/item?id=47066552" target="_blank">223 评论</a></span>
+<br><span class="meta">449 pts | <a href="https://news.ycombinator.com/item?id=47066552" target="_blank">232 评论</a></span>
 </li>
 <li>
 <strong><a href="https://old.reddit.com/r/MacOS/comments/1r8900z/macos_which_officially_supports_27_year_old/" target="_blank" rel="noopener">27-year-old Apple iBooks can connect to Wi-Fi and download official updates</a></strong>
-<br><span class="meta">267 pts | <a href="https://news.ycombinator.com/item?id=47066241" target="_blank">136 评论</a></span>
+<br><span class="meta">280 pts | <a href="https://news.ycombinator.com/item?id=47066241" target="_blank">143 评论</a></span>
 </li>
 <li>
 <strong><a href="https://nicolasdickenmann.com/blog/the-great-fp64-divide.html" target="_blank" rel="noopener">15 years of FP64 segmentation, and why the Blackwell Ultra breaks the pattern</a></strong>
-<br><span class="meta">75 pts | <a href="https://news.ycombinator.com/item?id=47068890" target="_blank">19 评论</a></span>
+<br><span class="meta">81 pts | <a href="https://news.ycombinator.com/item?id=47068890" target="_blank">26 评论</a></span>
 </li>
 <li>
 <strong><a href="https://code.claude.com/docs/en/legal-and-compliance" target="_blank" rel="noopener">Anthropic officially bans using subscription auth for third party use</a></strong>
-<br><span class="meta">215 pts | <a href="https://news.ycombinator.com/item?id=47069299" target="_blank">223 评论</a></span>
+<br><span class="meta">247 pts | <a href="https://news.ycombinator.com/item?id=47069299" target="_blank">259 评论</a></span>
 </li>
 <li>
 <strong><a href="https://jasonfantl.com/posts/Universal-Unique-IDs/" target="_blank" rel="noopener">Cosmologically Unique IDs</a></strong>
-<br><span class="meta">339 pts | <a href="https://news.ycombinator.com/item?id=47064490" target="_blank">108 评论</a></span>
+<br><span class="meta">344 pts | <a href="https://news.ycombinator.com/item?id=47064490" target="_blank">108 评论</a></span>
 </li>
 <li>
 <strong><a href="https://thunderseethe.dev/posts/how-to-choose-between-hm-and-bidir/" target="_blank" rel="noopener">How to Choose Between Hindley-Milner and Bidirectional Typing</a></strong>
-<br><span class="meta">76 pts | <a href="https://news.ycombinator.com/item?id=47025885" target="_blank">9 评论</a></span>
+<br><span class="meta">82 pts | <a href="https://news.ycombinator.com/item?id=47025885" target="_blank">10 评论</a></span>
 </li>
 <li>
 <strong><a href="https://static.stepfun.com/blog/step-3.5-flash/" target="_blank" rel="noopener">Step 3.5 Flash: Fast Enough to Think. Reliable Enough to Act</a></strong>
-<br><span class="meta">35 pts | <a href="https://news.ycombinator.com/item?id=47069179" target="_blank">8 评论</a></span>
+<br><span class="meta">39 pts | <a href="https://news.ycombinator.com/item?id=47069179" target="_blank">11 评论</a></span>
 </li>
 <li>
 <strong><a href="https://tailscale.com/blog/peer-relays-ga" target="_blank" rel="noopener">Tailscale Peer Relays is now generally available</a></strong>
-<br><span class="meta">372 pts | <a href="https://news.ycombinator.com/item?id=47063005" target="_blank">186 评论</a></span>
+<br><span class="meta">381 pts | <a href="https://news.ycombinator.com/item?id=47063005" target="_blank">190 评论</a></span>
 </li>
 <li>
-<strong><a href="https://cepr.org/voxeu/columns/how-ai-affecting-productivity-and-jobs-europe" target="_blank" rel="noopener">How AI is affecting productivity and jobs in Europe</a></strong>
-<br><span class="meta">62 pts | <a href="https://news.ycombinator.com/item?id=47068320" target="_blank">23 评论</a></span>
+<strong><a href="https://chromereleases.googleblog.com/2026/02/stable-channel-update-for-desktop_13.html" target="_blank" rel="noopener">Zero-day CSS: CVE-2026-2441 exists in the wild</a></strong>
+<br><span class="meta">308 pts | <a href="https://news.ycombinator.com/item?id=47062748" target="_blank">159 评论</a></span>
 </li>
 </ol>
 
@@ -149,50 +147,5 @@ sources:
 <li>
 <strong><a href="https://www.infoq.com/news/2026/02/chrome-temporal-date-api/?utm_campaign=infoq_content&utm_source=infoq&utm_medium=feed&utm_term=global" target="_blank" rel="noopener">Chrome 144 Ships Temporal API: Advancing JavaScript Date/Time Standardisation</a></strong>
 <br><small>Chrome 144 introduces the groundbreaking Temporal API, revolutionizing date and time management in JavaScript. As a modern alternative to the criticized Date object, Temporal resolves parsing ambiguit...</small>
-</li>
-</ol>
-
-## 少数派 Top 10
-
-<ol>
-<li>
-<strong><a href="https://sspai.com/post/106374" target="_blank" rel="noopener">春节玩什么 | 过年聚会担心冷场？不妨试试这 10 款多人游戏</a></strong>
-<br><small>难得在假期中放松一下身心，不妨在闲暇时刻叫上三两好友，一起玩个游戏热闹热闹。查看全文</small>
-</li>
-<li>
-<strong><a href="https://sspai.com/post/106300" target="_blank" rel="noopener">新年拒酒指南：除了头孢还有什么拒酒的好借口</a></strong>
-<br><small>如果有一天，你不再需要任何借口，就能坦然地说出那句「我不喝，谢谢」——那才是这篇文章真正想要抵达的地方。查看全文</small>
-</li>
-<li>
-<strong><a href="https://sspai.com/post/106352" target="_blank" rel="noopener">本周看什么 | 最近值得一看的 8 部作品</a></strong>
-<br><small>📅本周新预告《来自深渊觉醒的神秘》首支预告2月8日，动画电影《来自深渊觉醒的神秘》发布了首支特报，定档2026年秋季在日本上映。本作改编自土笔章人的同名漫画，小岛正幸执导，仓田英之编剧，KevinPe ...查看全文</small>
-</li>
-<li>
-<strong><a href="https://sspai.com/post/105853" target="_blank" rel="noopener">或许，这就是「跨场景」个人终端的理想形态：CES 2026 后的 Khadas Mind 2体验</a></strong>
-<br><small>2025年10月至2026年1月期间，少数派与模块化迷你主机先行品牌Khadas合作，发起了针对Khadas最新产品Mind2的众测活动。本次活动分两期举行，每期挑选10名少数派用户，免费提供包含主机 ...查看全文</small>
-</li>
-<li>
-<strong><a href="https://sspai.com/prime/story/zhuanglesha-260213" target="_blank" rel="noopener">《英语自学手册》作者、创作者郝海龙都装了啥？</a></strong>
-<br><small>按：@郝海龙是少数派人气付费教程《英语自学手册》的作者，也是许多人关注的创作者。本期，《装了啥》请到他介绍自己的近况的规划，常用的软硬件工具，以及关于AI时代学习英语和从事创作的思考。请介绍一下你自己 ...查看全文本文为会员文章，出自《单篇文章》，订阅后可阅读全文。</small>
-</li>
-<li>
-<strong><a href="https://sspai.com/post/106144" target="_blank" rel="noopener">Kali LP-UNF：我心中的入门级桌面音箱最优解</a></strong>
-<br><small>在这个玄学肆虐的音频市场里，能有这样一个朴素，甚至有点接地气的品牌，何尝不是一种浪漫。查看全文</small>
-</li>
-<li>
-<strong><a href="https://sspai.com/post/106337" target="_blank" rel="noopener">派早报：智谱上线并开源 GLM-5 模型、网信办开展春节清朗行动</a></strong>
-<br><small>字节跳动发布视频创作模型 Seedance 2.0，小米 Tag 追踪器已在欧洲市场上市。查看全文</small>
-</li>
-<li>
-<strong><a href="https://sspai.com/post/106284" target="_blank" rel="noopener">春节长途旅行，这 6 款耐玩小游戏先备好</a></strong>
-<br><small>这篇文章推荐的游戏基于以下几个原则：无需联网，单机即可游玩；有极高的可重复性，无法以线性叙事「通关」或离通关的距离很远；至少有 iOS/Android 或 Switch 的版本可选。希望这些游戏能让你的旅途再轻松一点。查看全文</small>
-</li>
-<li>
-<strong><a href="https://sspai.com/post/106202" target="_blank" rel="noopener">iOS 26.3 值得关注的新特性</a></strong>
-<br><small>在iOS26.3正式版推出的这个时间点，离Apple的Q1财报发布已经过去了一周多的时间。有意思的是，最近半年Apple的股价因为AI进展缓慢而一直承压，在「美股七姐妹」中显得格格不入，却在最近半个月 ...查看全文</small>
-</li>
-<li>
-<strong><a href="https://sspai.com/post/105331" target="_blank" rel="noopener">普通人更要多动手：聊聊我把 Claude Code 变成个人助手后的那些事</a></strong>
-<br><small>下载一个 Claude Code 或者 Cursor，把你的想法告诉 AI。你会发现，原来自己能做到的事情，比想象中多得多。查看全文</small>
 </li>
 </ol>
