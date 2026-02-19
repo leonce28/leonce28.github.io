@@ -1,6 +1,6 @@
 ---
 title: "科技新闻日报 2026-02-19"
-date: 2026-02-19 15:16:08 +0800
+date: 2026-02-19 15:18:42 +0800
 categories: [News]
 tags: [news, daily-news]
 description: "每日自动抓取 Hacker News、36氪、InfoQ、少数派的热门科技新闻。"
@@ -20,7 +20,7 @@ sources:
 <ol>
 <li>
 <strong><a href="https://eutechmap.com/map" target="_blank" rel="noopener">European Tech Alternatives</a></strong>
-<br><span class="meta">147 pts | <a href="https://news.ycombinator.com/item?id=47070142" target="_blank">89 评论</a></span>
+<br><span class="meta">149 pts | <a href="https://news.ycombinator.com/item?id=47070142" target="_blank">92 评论</a></span>
 </li>
 <li>
 <strong><a href="https://pudding.cool/2026/02/womens-sizing/" target="_blank" rel="noopener">Sizing chaos</a></strong>
@@ -32,11 +32,11 @@ sources:
 </li>
 <li>
 <strong><a href="https://nicolasdickenmann.com/blog/the-great-fp64-divide.html" target="_blank" rel="noopener">15 years of FP64 segmentation, and why the Blackwell Ultra breaks the pattern</a></strong>
-<br><span class="meta">82 pts | <a href="https://news.ycombinator.com/item?id=47068890" target="_blank">26 评论</a></span>
+<br><span class="meta">82 pts | <a href="https://news.ycombinator.com/item?id=47068890" target="_blank">27 评论</a></span>
 </li>
 <li>
 <strong><a href="https://code.claude.com/docs/en/legal-and-compliance" target="_blank" rel="noopener">Anthropic officially bans using subscription auth for third party use</a></strong>
-<br><span class="meta">250 pts | <a href="https://news.ycombinator.com/item?id=47069299" target="_blank">261 评论</a></span>
+<br><span class="meta">252 pts | <a href="https://news.ycombinator.com/item?id=47069299" target="_blank">263 评论</a></span>
 </li>
 <li>
 <strong><a href="https://jasonfantl.com/posts/Universal-Unique-IDs/" target="_blank" rel="noopener">Cosmologically Unique IDs</a></strong>
@@ -51,12 +51,12 @@ sources:
 <br><span class="meta">82 pts | <a href="https://news.ycombinator.com/item?id=47025885" target="_blank">10 评论</a></span>
 </li>
 <li>
-<strong><a href="https://stoolap.io/blog/2026/02/19/introducing-stoolap-node/" target="_blank" rel="noopener">Stoolap/Node: A Native Node.js Driver That&#x27;s Surprisingly Fast</a></strong>
-<br><span class="meta">6 pts | <a href="https://news.ycombinator.com/item?id=47070446" target="_blank">0 评论</a></span>
-</li>
-<li>
 <strong><a href="https://tailscale.com/blog/peer-relays-ga" target="_blank" rel="noopener">Tailscale Peer Relays is now generally available</a></strong>
 <br><span class="meta">381 pts | <a href="https://news.ycombinator.com/item?id=47063005" target="_blank">190 评论</a></span>
+</li>
+<li>
+<strong><a href="https://stoolap.io/blog/2026/02/19/introducing-stoolap-node/" target="_blank" rel="noopener">Stoolap/Node: A Native Node.js Driver That&#x27;s Surprisingly Fast</a></strong>
+<br><span class="meta">6 pts | <a href="https://news.ycombinator.com/item?id=47070446" target="_blank">0 评论</a></span>
 </li>
 </ol>
 
