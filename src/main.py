@@ -5,7 +5,12 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from src.jekyll_generator import JekyllGenerator
-from src.scrapers import HackerNewsScraper, InfoQScraper, Kr36Scraper, SspaiScraper
+from src.scrapers import (
+    HackerNewsScraper,
+    InfoQScraper,
+    Kr36Scraper,
+    XiaoHongShuScraper,
+)
 
 logging.basicConfig(
     level=logging.INFO,
@@ -24,7 +29,7 @@ def main():
         HackerNewsScraper(top_n=10),
         Kr36Scraper(top_n=10),
         InfoQScraper(top_n=10),
-        SspaiScraper(top_n=10),
+        XiaoHongShuScraper(top_n=10),
     ]
 
     all_news = {}

@@ -3,6 +3,7 @@ from .hackernews import HackerNewsScraper
 from .infoq import InfoQScraper
 from .kr36 import Kr36Scraper
 from .sspai import SspaiScraper
+from .xiaohongshu import XiaoHongShuScraper
 
 __all__ = [
     "BaseScraper",
@@ -11,4 +12,5 @@ __all__ = [
     "Kr36Scraper",
     "InfoQScraper",
     "SspaiScraper",
+    "XiaoHongShuScraper",
 ]
