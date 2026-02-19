@@ -1,5 +1,5 @@
+import json
 from typing import List, Dict
-from bs4 import BeautifulSoup
 from .base import BaseScraper
 from .utils import AntiScraper
 
@@ -7,65 +7,72 @@ from .utils import AntiScraper
 class Kr36Scraper(BaseScraper):
     def __init__(self, top_n: int = 10):
         super().__init__("36氪", top_n)
-        self.url = "https://36kr.com"
 
     def fetch(self) -> List[Dict]:
-        response = AntiScraper.fetch_with_retry(
-            self.url,
-            extra_headers={
-                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-            },
-        )
-        if not response:
-            return []
+        return self._fetch_hot_articles()
 
-        soup = BeautifulSoup(response.text, "lxml")
-        news_list = []
+    def _fetch_hot_articles(self) -> List[Dict]:
+        api_url = "https://gateway.36kr.com/api/mis/nav/home/navList/flow"
+        payload = {"partner_id": "wap", "param": {"pageEvent": 1, "pageSize": 20}}
 
-        articles = soup.select("a.article-item-title") or soup.select(
-            ".hot-list-item a"
-        )
-
-        for article in articles[: self.top_n * 2]:
-            if len(news_list) >= self.top_n:
-                break
-
-            title = self.clean_text(article.get_text())
-            href = article.get("href", "")
-
-            if title and href:
-                if href.startswith("/"):
-                    href = f"https://36kr.com{href}"
-                news_list.append({"title": title, "url": href})
-
-        if not news_list:
-            news_list = self._parse_api()
-
-        return news_list
-
-    def _parse_api(self) -> List[Dict]:
-        api_url = "https://gateway.36kr.com/api/mis/nav/home/navList"
         response = AntiScraper.fetch_with_retry(
             api_url,
             extra_headers={
                 "Accept": "application/json",
+                "Content-Type": "application/json",
+                "Origin": "https://36kr.com",
+                "Referer": "https://36kr.com/",
             },
         )
+
+        if response:
+            try:
+                data = response.json()
+                items = data.get("data", {}).get(" itemList", []) or data.get(
+                    "data", {}
+                ).get("itemList", [])
+                news_list = []
+                for item in items[: self.top_n]:
+                    article = item.get("item", item)
+                    title = article.get("title", "") or article.get(
+                        "templateMaterial", {}
+                    ).get("title", "")
+                    article_id = article.get("id", "") or article.get("entityId", "")
+                    if title and article_id:
+                        news_list.append(
+                            {
+                                "title": self.clean_text(title),
+                                "url": f"https://36kr.com/p/{article_id}",
+                            }
+                        )
+                if news_list:
+                    return news_list
+            except Exception:
+                pass
+
+        return self._fetch_via_rss()
+
+    def _fetch_via_rss(self) -> List[Dict]:
+        import xml.etree.ElementTree as ET
+
+        rss_url = "https://36kr.com/feed"
+        response = AntiScraper.fetch_with_retry(rss_url)
         if not response:
             return []
 
         try:
-            data = response.json()
+            root = ET.fromstring(response.content)
             news_list = []
-            items = data.get("data", {}).get("list", []) or []
-
-            for item in items[: self.top_n]:
-                news_list.append(
-                    {
-                        "title": self.clean_text(item.get("title", "")),
-                        "url": f"https://36kr.com/p/{item.get('id', '')}",
-                    }
-                )
+            for item in root.findall(".//item")[: self.top_n]:
+                title_elem = item.find("title")
+                link_elem = item.find("link")
+                if title_elem is not None and link_elem is not None:
+                    news_list.append(
+                        {
+                            "title": self.clean_text(title_elem.text or ""),
+                            "url": link_elem.text or "",
+                        }
+                    )
             return news_list
         except Exception:
             return []

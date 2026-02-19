@@ -1,5 +1,5 @@
+import xml.etree.ElementTree as ET
 from typing import List, Dict
-from bs4 import BeautifulSoup
 from .base import BaseScraper
 from .utils import AntiScraper
 
@@ -7,56 +7,60 @@ from .utils import AntiScraper
 class InfoQScraper(BaseScraper):
     def __init__(self, top_n: int = 10):
         super().__init__("InfoQ", top_n)
-        self.url = "https://www.infoq.cn"
+        self.rss_url = "https://www.infoq.cn/feed"
 
     def fetch(self) -> List[Dict]:
+        return self._fetch_via_rss()
+
+    def _fetch_via_rss(self) -> List[Dict]:
         response = AntiScraper.fetch_with_retry(
-            self.url,
+            self.rss_url,
             extra_headers={
-                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+                "Accept": "application/rss+xml,application/xml,text/xml",
             },
         )
         if not response:
-            return []
+            return self._fetch_via_api()
 
-        soup = BeautifulSoup(response.text, "lxml")
-        news_list = []
+        try:
+            root = ET.fromstring(response.content)
+            news_list = []
 
-        articles = (
-            soup.select("a.article-item")
-            or soup.select(".list-item a")
-            or soup.select("a[href*='/article/']")
-        )
+            for item in root.findall(".//item")[: self.top_n * 2]:
+                if len(news_list) >= self.top_n:
+                    break
 
-        for article in articles[: self.top_n * 2]:
-            if len(news_list) >= self.top_n:
-                break
+                title_elem = item.find("title")
+                link_elem = item.find("link")
 
-            title_elem = article.select_one(".article-title") or article.select_one(
-                "h3"
-            )
-            title = self.clean_text(title_elem.get_text()) if title_elem else ""
+                if title_elem is not None and link_elem is not None:
+                    title = title_elem.text or ""
+                    url = link_elem.text or ""
 
-            href = article.get("href", "")
-            if title and href:
-                if href.startswith("/"):
-                    href = f"https://www.infoq.cn{href}"
-                news_list.append({"title": title, "url": href})
+                    if title and url:
+                        news_list.append(
+                            {
+                                "title": self.clean_text(title),
+                                "url": url,
+                            }
+                        )
 
-        if not news_list:
-            news_list = self._parse_api()
+            return news_list
+        except Exception:
+            return self._fetch_via_api()
 
-        return news_list
-
-    def _parse_api(self) -> List[Dict]:
+    def _fetch_via_api(self) -> List[Dict]:
         api_url = "https://www.infoq.cn/public/v1/article/getList"
         response = AntiScraper.fetch_with_retry(
             api_url,
             extra_headers={
                 "Accept": "application/json",
                 "Content-Type": "application/json",
+                "Origin": "https://www.infoq.cn",
+                "Referer": "https://www.infoq.cn/",
             },
         )
+
         if not response:
             return []
 
@@ -67,12 +71,15 @@ class InfoQScraper(BaseScraper):
 
             for item in items[: self.top_n]:
                 uuid = item.get("uuid", "")
-                news_list.append(
-                    {
-                        "title": self.clean_text(item.get("article_title", "")),
-                        "url": f"https://www.infoq.cn/article/{uuid}",
-                    }
-                )
+                title = item.get("article_title", "") or item.get("title", "")
+                if title and uuid:
+                    news_list.append(
+                        {
+                            "title": self.clean_text(title),
+                            "url": f"https://www.infoq.cn/article/{uuid}",
+                        }
+                    )
+
             return news_list
         except Exception:
             return []
