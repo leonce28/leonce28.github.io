@@ -8,10 +8,35 @@ logger = logging.getLogger(__name__)
 
 
 class XiaoHongShuScraper(BaseScraper):
-    rss_url = "https://rsshub.app/xiaohongshu/user/593032945e87e77791e03696/notes"
-
     def __init__(self, top_n: int = 10):
         super().__init__("小红书", top_n)
+        self.api_url = "https://api.lolimi.cn/API/jhrb/?hot=小红书"
 
     def fetch(self) -> List[NewsItem]:
-        return self._fetch_via_rss()
+        response = RequestHelper.fetch_with_retry(self.api_url)
+        if not response:
+            logger.warning(f"[{self.name}] No response from API")
+            return []
+
+        try:
+            data = response.json()
+            news_list: List[NewsItem] = []
+
+            if data.get("success") and data.get("data"):
+                for item in data["data"][: self.top_n]:
+                    title = item.get("title", "")
+                    url = item.get("url", "")
+                    if title and url:
+                        news_list.append(
+                            NewsItem(
+                                title=self.clean_text(title),
+                                url=url,
+                                summary="",
+                            )
+                        )
+
+            logger.info(f"[{self.name}] Fetched {len(news_list)} items")
+            return news_list
+        except Exception as e:
+            logger.error(f"[{self.name}] Failed to parse API response: {e}")
+            return []
