@@ -1,6 +1,6 @@
 ---
 title: "科技新闻日报 2026-02-19"
-date: 2026-02-19 15:29:22 +0800
+date: 2026-02-19 15:30:22 +0800
 categories: [News]
 tags: [news, daily-news]
 description: "每日自动抓取 Hacker News、36氪、InfoQ、少数派的热门科技新闻。"
@@ -24,7 +24,7 @@ sources:
 </li>
 <li>
 <strong><a href="https://old.reddit.com/r/MacOS/comments/1r8900z/macos_which_officially_supports_27_year_old/" target="_blank" rel="noopener">27-year-old Apple iBooks can connect to Wi-Fi and download official updates</a></strong>
-<br><span class="meta">287 pts | <a href="https://news.ycombinator.com/item?id=47066241" target="_blank">144 评论</a></span>
+<br><span class="meta">288 pts | <a href="https://news.ycombinator.com/item?id=47066241" target="_blank">144 评论</a></span>
 </li>
 <li>
 <strong><a href="https://nicolasdickenmann.com/blog/the-great-fp64-divide.html" target="_blank" rel="noopener">15 years of FP64 segmentation, and why the Blackwell Ultra breaks the pattern</a></strong>
@@ -32,7 +32,7 @@ sources:
 </li>
 <li>
 <strong><a href="https://code.claude.com/docs/en/legal-and-compliance" target="_blank" rel="noopener">Anthropic officially bans using subscription auth for third party use</a></strong>
-<br><span class="meta">257 pts | <a href="https://news.ycombinator.com/item?id=47069299" target="_blank">270 评论</a></span>
+<br><span class="meta">257 pts | <a href="https://news.ycombinator.com/item?id=47069299" target="_blank">271 评论</a></span>
 </li>
 <li>
 <strong><a href="https://jasonfantl.com/posts/Universal-Unique-IDs/" target="_blank" rel="noopener">Cosmologically Unique IDs</a></strong>
@@ -43,12 +43,12 @@ sources:
 <br><span class="meta">9 pts | <a href="https://news.ycombinator.com/item?id=47070446" target="_blank">1 评论</a></span>
 </li>
 <li>
-<strong><a href="https://static.stepfun.com/blog/step-3.5-flash/" target="_blank" rel="noopener">Step 3.5 Flash: Fast Enough to Think. Reliable Enough to Act</a></strong>
-<br><span class="meta">40 pts | <a href="https://news.ycombinator.com/item?id=47069179" target="_blank">11 评论</a></span>
-</li>
-<li>
 <strong><a href="https://thunderseethe.dev/posts/how-to-choose-between-hm-and-bidir/" target="_blank" rel="noopener">How to choose between Hindley-Milner and bidirectional typing</a></strong>
 <br><span class="meta">82 pts | <a href="https://news.ycombinator.com/item?id=47025885" target="_blank">10 评论</a></span>
+</li>
+<li>
+<strong><a href="https://static.stepfun.com/blog/step-3.5-flash/" target="_blank" rel="noopener">Step 3.5 Flash: Fast Enough to Think. Reliable Enough to Act</a></strong>
+<br><span class="meta">40 pts | <a href="https://news.ycombinator.com/item?id=47069179" target="_blank">11 评论</a></span>
 </li>
 <li>
 <strong><a href="https://tailscale.com/blog/peer-relays-ga" target="_blank" rel="noopener">Tailscale Peer Relays is now generally available</a></strong>
@@ -85,7 +85,7 @@ sources:
 </li>
 <li>
 <strong><a href="https://36kr.com/p/3684271723261828?f=rss" target="_blank" rel="noopener">字节跳动 , 刚刚一笔赚140亿</a></strong>
-<br><small>图片来源：视觉中国 作者/杨继云 报道/���资界PEdaily 新年本土最大并购要诞生了。 日前，路透社援引知情人士消息披露，字节跳动正与沙特Savvy Games Group就出售旗下游戏部门——上海沐瞳科技展开深入磋商，此次交易估值预计60-70亿美元（约合人民币420-490亿元），据悉最快将在本季度敲定。 乍听陌生，沐瞳科技正是海外热门手游《决胜巅峰》的开发商。五年前，字节跳动以40亿美...</small>
+<br><small>图片来源：视觉中国 作者/杨继云 报道/投资界PEdaily 新年本土最大并购要诞生了。 日前，路透社援引知情人士消息披露，字节跳动正与沙特Savvy Games Group就出售旗下游戏部门——上海沐瞳科技展开深入磋商，此次交易估值预计60-70亿美元（约合人民币420-490亿元），据悉最快将在本季度敲定。 乍听陌生，沐瞳科技正是海外热门手游《决胜巅峰》的开发商。五年前，字节跳动以40亿美元估...</small>
 </li>
 <li>
 <strong><a href="https://36kr.com/p/3683270058176135?f=rss" target="_blank" rel="noopener">36氪出海·全球化公司｜追觅割草机器人：借双IP破圈，以技术立标杆，深耕全球化布局</a></strong>
