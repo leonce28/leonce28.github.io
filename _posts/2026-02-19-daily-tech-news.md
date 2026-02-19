@@ -1,6 +1,6 @@
 ---
 title: "科技新闻日报 2026-02-19"
-date: 2026-02-19 15:20:31 +0800
+date: 2026-02-19 15:22:46 +0800
 categories: [News]
 tags: [news, daily-news]
 description: "每日自动抓取 Hacker News、36氪、InfoQ、少数派的热门科技新闻。"
@@ -19,24 +19,24 @@ sources:
 
 <ol>
 <li>
-<strong><a href="https://eutechmap.com/map" target="_blank" rel="noopener">European Tech Alternatives</a></strong>
-<br><span class="meta">152 pts | <a href="https://news.ycombinator.com/item?id=47070142" target="_blank">95 评论</a></span>
-</li>
-<li>
 <strong><a href="https://pudding.cool/2026/02/womens-sizing/" target="_blank" rel="noopener">Sizing chaos</a></strong>
-<br><span class="meta">452 pts | <a href="https://news.ycombinator.com/item?id=47066552" target="_blank">232 评论</a></span>
+<br><span class="meta">453 pts | <a href="https://news.ycombinator.com/item?id=47066552" target="_blank">233 评论</a></span>
 </li>
 <li>
 <strong><a href="https://old.reddit.com/r/MacOS/comments/1r8900z/macos_which_officially_supports_27_year_old/" target="_blank" rel="noopener">27-year-old Apple iBooks can connect to Wi-Fi and download official updates</a></strong>
-<br><span class="meta">281 pts | <a href="https://news.ycombinator.com/item?id=47066241" target="_blank">143 评论</a></span>
+<br><span class="meta">282 pts | <a href="https://news.ycombinator.com/item?id=47066241" target="_blank">143 评论</a></span>
 </li>
 <li>
 <strong><a href="https://nicolasdickenmann.com/blog/the-great-fp64-divide.html" target="_blank" rel="noopener">15 years of FP64 segmentation, and why the Blackwell Ultra breaks the pattern</a></strong>
-<br><span class="meta">82 pts | <a href="https://news.ycombinator.com/item?id=47068890" target="_blank">27 评论</a></span>
+<br><span class="meta">84 pts | <a href="https://news.ycombinator.com/item?id=47068890" target="_blank">27 评论</a></span>
 </li>
 <li>
 <strong><a href="https://code.claude.com/docs/en/legal-and-compliance" target="_blank" rel="noopener">Anthropic officially bans using subscription auth for third party use</a></strong>
-<br><span class="meta">252 pts | <a href="https://news.ycombinator.com/item?id=47069299" target="_blank">263 评论</a></span>
+<br><span class="meta">253 pts | <a href="https://news.ycombinator.com/item?id=47069299" target="_blank">264 评论</a></span>
+</li>
+<li>
+<strong><a href="https://stoolap.io/blog/2026/02/19/introducing-stoolap-node/" target="_blank" rel="noopener">Stoolap/Node: A Native Node.js Driver That&#x27;s Surprisingly Fast</a></strong>
+<br><span class="meta">7 pts | <a href="https://news.ycombinator.com/item?id=47070446" target="_blank">0 评论</a></span>
 </li>
 <li>
 <strong><a href="https://jasonfantl.com/posts/Universal-Unique-IDs/" target="_blank" rel="noopener">Cosmologically Unique IDs</a></strong>
@@ -47,7 +47,7 @@ sources:
 <br><span class="meta">40 pts | <a href="https://news.ycombinator.com/item?id=47069179" target="_blank">11 评论</a></span>
 </li>
 <li>
-<strong><a href="https://thunderseethe.dev/posts/how-to-choose-between-hm-and-bidir/" target="_blank" rel="noopener">How to Choose Between Hindley-Milner and Bidirectional Typing</a></strong>
+<strong><a href="https://thunderseethe.dev/posts/how-to-choose-between-hm-and-bidir/" target="_blank" rel="noopener">How to choose between Hindley-Milner and bidirectional typing</a></strong>
 <br><span class="meta">82 pts | <a href="https://news.ycombinator.com/item?id=47025885" target="_blank">10 评论</a></span>
 </li>
 <li>
@@ -55,8 +55,8 @@ sources:
 <br><span class="meta">381 pts | <a href="https://news.ycombinator.com/item?id=47063005" target="_blank">190 评论</a></span>
 </li>
 <li>
-<strong><a href="https://stoolap.io/blog/2026/02/19/introducing-stoolap-node/" target="_blank" rel="noopener">Stoolap/Node: A Native Node.js Driver That&#x27;s Surprisingly Fast</a></strong>
-<br><span class="meta">6 pts | <a href="https://news.ycombinator.com/item?id=47070446" target="_blank">0 评论</a></span>
+<strong><a href="https://chromereleases.googleblog.com/2026/02/stable-channel-update-for-desktop_13.html" target="_blank" rel="noopener">Zero-day CSS: CVE-2026-2441 exists in the wild</a></strong>
+<br><span class="meta">309 pts | <a href="https://news.ycombinator.com/item?id=47062748" target="_blank">161 评论</a></span>
 </li>
 </ol>
 
