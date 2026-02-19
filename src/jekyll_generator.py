@@ -21,9 +21,9 @@ class JekyllGenerator:
 title: "科技新闻日报 {self.date_str}"
 date: {self.datetime_str}
 categories: [News]
-tags: [daily-news]
+tags: [news, daily-news]
 description: "每日自动抓取 Hacker News、36氪、InfoQ、少数派的热门科技新闻。"
-author: leonce28
+author: 撑花儿
 pin: true
 sources:
 {sources_yaml}---

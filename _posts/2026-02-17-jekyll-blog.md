@@ -4,7 +4,7 @@ date: 2026-02-17 10:00:00 +0800
 categories: [Tutorial]
 tags: [jekyll, github-pages]
 description: "从零开始搭建一个漂亮的 Jekyll 博客。"
-author: leonce28
+author: 撑花儿
 ---
 
 ## 为什么选择 Jekyll

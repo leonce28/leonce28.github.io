@@ -4,7 +4,7 @@ date: 2026-02-18 10:00:00 +0800
 categories: [Tutorial]
 tags: [python, crawler, automation, github-actions]
 description: "使用 Python 定时抓取科技新闻，并自动生成静态页面。"
-author: leonce28
+author: 撑花儿
 ---
 
 ## 项目背景
