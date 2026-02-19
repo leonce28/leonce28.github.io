@@ -1,6 +1,6 @@
 ---
 title: "科技新闻日报 2026-02-19"
-date: 2026-02-19 15:22:46 +0800
+date: 2026-02-19 15:25:55 +0800
 categories: [News]
 tags: [news, daily-news]
 description: "每日自动抓取 Hacker News、36氪、InfoQ、少数派的热门科技新闻。"
@@ -20,27 +20,27 @@ sources:
 <ol>
 <li>
 <strong><a href="https://pudding.cool/2026/02/womens-sizing/" target="_blank" rel="noopener">Sizing chaos</a></strong>
-<br><span class="meta">453 pts | <a href="https://news.ycombinator.com/item?id=47066552" target="_blank">233 评论</a></span>
+<br><span class="meta">454 pts | <a href="https://news.ycombinator.com/item?id=47066552" target="_blank">235 评论</a></span>
 </li>
 <li>
 <strong><a href="https://old.reddit.com/r/MacOS/comments/1r8900z/macos_which_officially_supports_27_year_old/" target="_blank" rel="noopener">27-year-old Apple iBooks can connect to Wi-Fi and download official updates</a></strong>
-<br><span class="meta">282 pts | <a href="https://news.ycombinator.com/item?id=47066241" target="_blank">143 评论</a></span>
+<br><span class="meta">284 pts | <a href="https://news.ycombinator.com/item?id=47066241" target="_blank">144 评论</a></span>
 </li>
 <li>
 <strong><a href="https://nicolasdickenmann.com/blog/the-great-fp64-divide.html" target="_blank" rel="noopener">15 years of FP64 segmentation, and why the Blackwell Ultra breaks the pattern</a></strong>
-<br><span class="meta">84 pts | <a href="https://news.ycombinator.com/item?id=47068890" target="_blank">27 评论</a></span>
+<br><span class="meta">85 pts | <a href="https://news.ycombinator.com/item?id=47068890" target="_blank">27 评论</a></span>
 </li>
 <li>
 <strong><a href="https://code.claude.com/docs/en/legal-and-compliance" target="_blank" rel="noopener">Anthropic officially bans using subscription auth for third party use</a></strong>
-<br><span class="meta">253 pts | <a href="https://news.ycombinator.com/item?id=47069299" target="_blank">264 评论</a></span>
+<br><span class="meta">256 pts | <a href="https://news.ycombinator.com/item?id=47069299" target="_blank">268 评论</a></span>
+</li>
+<li>
+<strong><a href="https://jasonfantl.com/posts/Universal-Unique-IDs/" target="_blank" rel="noopener">Cosmologically Unique IDs</a></strong>
+<br><span class="meta">345 pts | <a href="https://news.ycombinator.com/item?id=47064490" target="_blank">109 评论</a></span>
 </li>
 <li>
 <strong><a href="https://stoolap.io/blog/2026/02/19/introducing-stoolap-node/" target="_blank" rel="noopener">Stoolap/Node: A Native Node.js Driver That&#x27;s Surprisingly Fast</a></strong>
 <br><span class="meta">7 pts | <a href="https://news.ycombinator.com/item?id=47070446" target="_blank">0 评论</a></span>
-</li>
-<li>
-<strong><a href="https://jasonfantl.com/posts/Universal-Unique-IDs/" target="_blank" rel="noopener">Cosmologically Unique IDs</a></strong>
-<br><span class="meta">345 pts | <a href="https://news.ycombinator.com/item?id=47064490" target="_blank">108 评论</a></span>
 </li>
 <li>
 <strong><a href="https://static.stepfun.com/blog/step-3.5-flash/" target="_blank" rel="noopener">Step 3.5 Flash: Fast Enough to Think. Reliable Enough to Act</a></strong>
