@@ -1,0 +1,87 @@
+{
+  "items": [
+    {
+      "id": "hn-001",
+      "title": "Rust is the most admired language for the 8th year in a row",
+      "summary": "Stack Overflow's 2024 Developer Survey shows Rust as the most admired language for the 8th consecutive year, with 83% of developers expressing interest in continuing to use it.",
+      "source": "Hacker News",
+      "url": "https://survey.stackoverflow.co/2024",
+      "published_at": "2026-02-22T08:00:00+08:00",
+      "author": "Stack Overflow",
+      "tags": ["rust", "programming", "survey"]
+    },
+    {
+      "id": "hn-002",
+      "title": "PostgreSQL 17 Released with Major Performance Improvements",
+      "summary": "PostgreSQL 17 brings significant performance improvements including faster parallel queries, improved memory management, and new JSON path query capabilities.",
+      "source": "Hacker News",
+      "url": "https://www.postgresql.org/about/news/",
+      "published_at": "2026-02-22T07:30:00+08:00",
+      "author": "PostgreSQL",
+      "tags": ["postgresql", "database", "release"]
+    },
+    {
+      "id": "36kr-001",
+      "title": "字节跳动推出AI编程助手，主打中文编程场景",
+      "summary": "字节跳动发布AI编程助手，支持中文自然语言编程，能够理解中文需求并生成代码，大幅提升国内开发者的编程效率。",
+      "source": "36氪",
+      "url": "https://36kr.com/motif/te",
+      "published_at": "2026-02-22T10:00:00+08:00",
+      "author": "36氪",
+      "tags": ["ai", "编程", "字节跳动"]
+    },
+    {
+      "id": "36kr-002",
+      "title": "小米汽车SU7交付量突破10万台",
+      "summary": "小米汽车SU7上市以来累计交付量突破10万台，智能驾驶领域持续投入，新能源汽车市场竞争加剧。",
+      "source": "36氪",
+      "url": "https://36kr.com/motif/chuhang",
+      "published_at": "2026-02-22T09:30:00+08:00",
+      "author": "36氪",
+      "tags": ["小米", "汽车", "智能驾驶"]
+    },
+    {
+      "id": "infoq-001",
+      "title": "微服务架构演进的十个最佳实践",
+      "summary": "本文总结了微服务架构演进过程中的十个关键最佳实践，包括服务拆分策略、数据一致性保障、可观测性建设等方面的经验分享。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.cn/topic/architecture",
+      "published_at": "2026-02-22T11:00:00+08:00",
+      "author": "InfoQ",
+      "tags": ["微服务", "架构", "最佳实践"]
+    },
+    {
+      "id": "infoq-002",
+      "title": "Kubernetes 1.30发布：引入原生sidecar容器支持",
+      "summary": "Kubernetes 1.30版本正式发布，最引人注目的新功能是原生sidecar容器支持，解决了长期以来sidecar容器的生命周期管理问题。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.cn/topic/kubernetes",
+      "published_at": "2026-02-22T10:30:00+08:00",
+      "author": "InfoQ",
+      "tags": ["kubernetes", "容器", "云原生"]
+    },
+    {
+      "id": "sspai-001",
+      "title": "我的 2024 年度效率工具清单",
+      "summary": "分享我日常使用的效率工具，包括任务管理、笔记、时间追踪等类别，帮助你在新的一年提升工作效率。",
+      "source": "少数派",
+      "url": "https://sspai.com/",
+      "published_at": "2026-02-22T12:00:00+08:00",
+      "author": "少数派",
+      "tags": ["效率", "工具", "推荐"]
+    },
+    {
+      "id": "sspai-002",
+      "title": "AI写作助手横评：主流工具对比",
+      "summary": "从中文写作、创意能力、实用性等维度，全面对比主流AI写作助手的表现。",
+      "source": "少数派",
+      "url": "https://sspai.com/",
+      "published_at": "2026-02-22T11:30:00+08:00",
+      "author": "少数派",
+      "tags": ["ai", "写作", "评测"]
+    }
+  ],
+  "total": 8,
+  "page": 1,
+  "page_size": 20
+}
