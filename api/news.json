@@ -1,0 +1,207 @@
+{
+  "items": [
+    {
+      "id": "hn-001",
+      "title": "Rust is the most admired language for the 8th year in a row",
+      "summary": "Stack Overflow's 2024 Developer Survey shows Rust as the most admired language for the 8th consecutive year, with 83% of developers expressing interest in continuing to use it.",
+      "source": "Hacker News",
+      "url": "https://survey.stackoverflow.co/2024",
+      "published_at": "2026-02-23T08:00:00+08:00",
+      "author": "Stack Overflow",
+      "tags": ["rust", "programming", "survey"]
+    },
+    {
+      "id": "hn-002",
+      "title": "PostgreSQL 17 Released with Major Performance Improvements",
+      "summary": "PostgreSQL 17 brings significant performance improvements including faster parallel queries, improved memory management, and new JSON path query capabilities.",
+      "source": "Hacker News",
+      "url": "https://www.postgresql.org/about/news/postgresql-17-released-2936/",
+      "published_at": "2026-02-23T07:30:00+08:00",
+      "author": "PostgreSQL Global Development Group",
+      "tags": ["postgresql", "database", "release"]
+    },
+    {
+      "id": "hn-003",
+      "title": "Apple announces M4 chip with breakthrough AI performance",
+      "summary": "Apple's new M4 chip features a 10-core CPU and 10-core GPU, with a new Neural Engine capable of 38 trillion operations per second for on-device AI processing.",
+      "source": "Hacker News",
+      "url": "https://www.apple.com/newsroom/2024/05/apple-introduces-m4-chip/",
+      "published_at": "2026-02-23T06:00:00+08:00",
+      "author": "Apple",
+      "tags": ["apple", "hardware", "ai"]
+    },
+    {
+      "id": "hn-004",
+      "title": "The return of the 90s web: Why developers are embracing simplicity",
+      "summary": "A growing movement of developers are building websites with minimal JavaScript, focusing on HTML-first approaches for better performance and accessibility.",
+      "source": "Hacker News",
+      "url": "https://mxb.dev/blog/the-return-of-the-90s-web/",
+      "published_at": "2026-02-23T05:30:00+08:00",
+      "author": "Max Böck",
+      "tags": ["web", "javascript", "performance"]
+    },
+    {
+      "id": "hn-005",
+      "title": "SQLite as a document database",
+      "summary": "An exploration of using SQLite's JSON1 extension to build a document database, showing that SQLite can be a viable alternative to MongoDB for many use cases.",
+      "source": "Hacker News",
+      "url": "https://antonz.org/sqlite-is-a-document-database/",
+      "published_at": "2026-02-23T04:00:00+08:00",
+      "author": "Anton Zhiyanov",
+      "tags": ["sqlite", "database", "nosql"]
+    },
+    {
+      "id": "36kr-001",
+      "title": "字节跳动推出AI编程助手Trae，主打中文编程场景",
+      "summary": "字节跳动发布AI编程助手Trae，支持中文自然语言编程，能够理解中文需求并生成代码，大幅提升国内开发者的编程效率。",
+      "source": "36氪",
+      "url": "https://36kr.com/p/285123456789",
+      "published_at": "2026-02-23T10:00:00+08:00",
+      "author": "36氪",
+      "tags": ["ai", "编程", "字节跳动"]
+    },
+    {
+      "id": "36kr-002",
+      "title": "小米汽车SU7交付量突破10万台，雷军宣布新目标",
+      "summary": "小米汽车SU7上市以来累计交付量突破10万台，雷军表示2026年目标交付30万台，将继续加大在智能驾驶领域的投入。",
+      "source": "36氪",
+      "url": "https://36kr.com/p/285123456790",
+      "published_at": "2026-02-23T09:30:00+08:00",
+      "author": "36氪",
+      "tags": ["小米", "汽车", "智能驾驶"]
+    },
+    {
+      "id": "36kr-003",
+      "title": "阿里云发布通义千问3.0，性能超越GPT-4",
+      "summary": "阿里云发布通义千问3.0版本，在多项基准测试中超越GPT-4，支持100万token上下文窗口，将全面接入阿里系产品。",
+      "source": "36氪",
+      "url": "https://36kr.com/p/285123456791",
+      "published_at": "2026-02-23T09:00:00+08:00",
+      "author": "36氪",
+      "tags": ["阿里云", "ai", "大模型"]
+    },
+    {
+      "id": "36kr-004",
+      "title": "OpenAI在中国设立研发中心，首批招聘100人",
+      "summary": "OpenAI宣布在北京设立研发中心，专注于多模态AI和安全对齐研究，首批计划招聘100名研究人员和工程师。",
+      "source": "36氪",
+      "url": "https://36kr.com/p/285123456792",
+      "published_at": "2026-02-23T08:30:00+08:00",
+      "author": "36氪",
+      "tags": ["openai", "ai", "研发"]
+    },
+    {
+      "id": "36kr-005",
+      "title": "腾讯发布混元大模型，全面接入微信生态",
+      "summary": "腾讯发布混元大模型最新版本，支持图文理解、代码生成等能力，将全面接入微信、QQ等产品，服务超过10亿用户。",
+      "source": "36氪",
+      "url": "https://36kr.com/p/285123456793",
+      "published_at": "2026-02-23T08:00:00+08:00",
+      "author": "36氪",
+      "tags": ["腾讯", "大模型", "微信"]
+    },
+    {
+      "id": "infoq-001",
+      "title": "微服务架构演进的十个最佳实践",
+      "summary": "本文总结了微服务架构演进过程中的十个关键最佳实践，包括服务拆分策略、数据一致性保障、可观测性建设等方面的经验分享。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.cn/article/microservices-best-practices-2024",
+      "published_at": "2026-02-23T11:00:00+08:00",
+      "author": "InfoQ",
+      "tags": ["微服务", "架构", "最佳实践"]
+    },
+    {
+      "id": "infoq-002",
+      "title": "Kubernetes 1.30发布：引入原生_sidecar_容器支持",
+      "summary": "Kubernetes 1.30版本正式发布，最引人注目的新功能是原生sidecar容器支持，解决了长期以来sidecar容器的生命周期管理问题。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.cn/article/kubernetes-1-30-release",
+      "published_at": "2026-02-23T10:30:00+08:00",
+      "author": "InfoQ",
+      "tags": ["kubernetes", "容器", "云原生"]
+    },
+    {
+      "id": "infoq-003",
+      "title": "GraphQL vs REST：2024年的技术选型指南",
+      "summary": "深入对比GraphQL和REST在2024年的技术选型，从性能、开发体验、生态系统等多个维度分析两种API设计范式的优劣。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.cn/article/graphql-vs-rest-2024",
+      "published_at": "2026-02-23T10:00:00+08:00",
+      "author": "InfoQ",
+      "tags": ["graphql", "rest", "api"]
+    },
+    {
+      "id": "infoq-004",
+      "title": "云原生安全：零信任架构实战指南",
+      "summary": "详细介绍如何在云原生环境中实施零信任安全架构，包括身份认证、服务网格安全、密钥管理等关键组件的实现方案。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.cn/article/zero-trust-cloud-native",
+      "published_at": "2026-02-23T09:30:00+08:00",
+      "author": "InfoQ",
+      "tags": ["安全", "零信任", "云原生"]
+    },
+    {
+      "id": "infoq-005",
+      "title": "React Server Components深度解析",
+      "summary": "全面解析React Server Components的工作原理、性能优势和最佳实践，帮助开发者理解这一革命性的React新特性。",
+      "source": "InfoQ",
+      "url": "https://www.infoq.cn/article/react-server-components-deep-dive",
+      "published_at": "2026-02-23T09:00:00+08:00",
+      "author": "InfoQ",
+      "tags": ["react", "前端", "服务端渲染"]
+    },
+    {
+      "id": "sspai-001",
+      "title": "我的 2024 年度效率工具清单",
+      "summary": "分享我日常使用的效率工具，包括任务管理、笔记、时间追踪等类别，帮助你在新的一年提升工作效率。",
+      "source": "少数派",
+      "url": "https://sspai.com/post/85123",
+      "published_at": "2026-02-23T12:00:00+08:00",
+      "author": "少数派",
+      "tags": ["效率", "工具", "推荐"]
+    },
+    {
+      "id": "sspai-002",
+      "title": "AI写作助手横评：ChatGPT、Claude、文心一言谁更强？",
+      "summary": "从中文写作、创意能力、实用性等维度，全面对比ChatGPT、Claude和文心一言三大AI写作助手的表现。",
+      "source": "少数派",
+      "url": "https://sspai.com/post/85124",
+      "published_at": "2026-02-23T11:30:00+08:00",
+      "author": "少数派",
+      "tags": ["ai", "写作", "评测"]
+    },
+    {
+      "id": "sspai-003",
+      "title": "macOS效率提升：这些快捷键你必须知道",
+      "summary": "精选50个最实用的macOS快捷键，覆盖系统操作、窗口管理、文本编辑等场景，让你的Mac使用效率翻倍。",
+      "source": "少数派",
+      "url": "https://sspai.com/post/85125",
+      "published_at": "2026-02-23T11:00:00+08:00",
+      "author": "少数派",
+      "tags": ["macos", "快捷键", "效率"]
+    },
+    {
+      "id": "sspai-004",
+      "title": "从零开始搭建个人知识管理系统",
+      "summary": "详细介绍如何使用Obsidian、Notion等工具搭建个人知识管理系统，实现知识的高效收集、整理和输出。",
+      "source": "少数派",
+      "url": "https://sspai.com/post/85126",
+      "published_at": "2026-02-23T10:30:00+08:00",
+      "author": "少数派",
+      "tags": ["知识管理", "obsidian", "notion"]
+    },
+    {
+      "id": "sspai-005",
+      "title": "2024年最值得购买的数码产品推荐",
+      "summary": "精选2024年最值得购买的数码产品，涵盖手机、平板、耳机、键盘等品类，帮助你在选购时做出明智决策。",
+      "source": "少数派",
+      "url": "https://sspai.com/post/85127",
+      "published_at": "2026-02-23T10:00:00+08:00",
+      "author": "少数派",
+      "tags": ["数码", "推荐", "购买指南"]
+    }
+  ],
+  "total": 20,
+  "page": 1,
+  "page_size": 20
+}
