@@ -5,9 +5,9 @@
       "title": "Rust is the most admired language for the 8th year in a row",
       "summary": "Stack Overflow's 2024 Developer Survey shows Rust as the most admired language for the 8th consecutive year, with 83% of developers expressing interest in continuing to use it.",
       "source": "Hacker News",
-      "url": "https://survey.stackoverflow.co/2024",
+      "url": "https://news.ycombinator.com/",
       "published_at": "2026-02-23T08:00:00+08:00",
-      "author": "Stack Overflow",
+      "author": "Hacker News",
       "tags": ["rust", "programming", "survey"]
     },
     {
@@ -15,9 +15,9 @@
       "title": "PostgreSQL 17 Released with Major Performance Improvements",
       "summary": "PostgreSQL 17 brings significant performance improvements including faster parallel queries, improved memory management, and new JSON path query capabilities.",
       "source": "Hacker News",
-      "url": "https://www.postgresql.org/about/news/",
+      "url": "https://news.ycombinator.com/",
       "published_at": "2026-02-23T07:30:00+08:00",
-      "author": "PostgreSQL",
+      "author": "Hacker News",
       "tags": ["postgresql", "database", "release"]
     },
     {
@@ -25,9 +25,9 @@
       "title": "Apple announces M4 chip with breakthrough AI performance",
       "summary": "Apple's new M4 chip features a 10-core CPU and 10-core GPU, with a new Neural Engine capable of 38 trillion operations per second for on-device AI processing.",
       "source": "Hacker News",
-      "url": "https://www.apple.com/newsroom/",
+      "url": "https://news.ycombinator.com/",
       "published_at": "2026-02-23T06:00:00+08:00",
-      "author": "Apple",
+      "author": "Hacker News",
       "tags": ["apple", "hardware", "ai"]
     },
     {
@@ -45,9 +45,9 @@
       "title": "SQLite as a document database",
       "summary": "An exploration of using SQLite's JSON1 extension to build a document database, showing that SQLite can be a viable alternative to MongoDB for many use cases.",
       "source": "Hacker News",
-      "url": "https://sqlite.org/",
+      "url": "https://news.ycombinator.com/",
       "published_at": "2026-02-23T04:00:00+08:00",
-      "author": "SQLite",
+      "author": "Hacker News",
       "tags": ["sqlite", "database", "nosql"]
     },
     {
@@ -55,7 +55,7 @@
       "title": "字节跳动推出AI编程助手，主打中文编程场景",
       "summary": "字节跳动发布AI编程助手，支持中文自然语言编程，能够理解中文需求并生成代码，大幅提升国内开发者的编程效率。",
       "source": "36氪",
-      "url": "https://36kr.com/motif/te",
+      "url": "https://36kr.com/",
       "published_at": "2026-02-23T10:00:00+08:00",
       "author": "36氪",
       "tags": ["ai", "编程", "字节跳动"]
@@ -65,7 +65,7 @@
       "title": "小米汽车SU7交付量突破10万台",
       "summary": "小米汽车SU7上市以来累计交付量突破10万台，智能驾驶领域持续投入，新能源汽车市场竞争加剧。",
       "source": "36氪",
-      "url": "https://36kr.com/motif/chuhang",
+      "url": "https://36kr.com/",
       "published_at": "2026-02-23T09:30:00+08:00",
       "author": "36氪",
       "tags": ["小米", "汽车", "智能驾驶"]
@@ -75,7 +75,7 @@
       "title": "阿里云发布通义千问3.0，性能大幅提升",
       "summary": "阿里云发布通义千问3.0版本，在多项基准测试中表现优异，支持100万token上下文窗口，将全面接入阿里系产品。",
       "source": "36氪",
-      "url": "https://36kr.com/motif/ai",
+      "url": "https://36kr.com/",
       "published_at": "2026-02-23T09:00:00+08:00",
       "author": "36氪",
       "tags": ["阿里云", "ai", "大模型"]
@@ -85,7 +85,7 @@
       "title": "AI研发持续投入，中国科技企业加速布局",
       "summary": "中国科技企业持续加大AI研发投入，在多模态AI和安全对齐研究方面取得突破，推动人工智能产业快速发展。",
       "source": "36氪",
-      "url": "https://36kr.com/motif/ai",
+      "url": "https://36kr.com/",
       "published_at": "2026-02-23T08:30:00+08:00",
       "author": "36氪",
       "tags": ["ai", "研发", "科技"]
@@ -95,7 +95,7 @@
       "title": "腾讯发布混元大模型，全面接入微信生态",
       "summary": "腾讯发布混元大模型最新版本，支持图文理解、代码生成等能力，将全面接入微信、QQ等产品。",
       "source": "36氪",
-      "url": "https://36kr.com/motif/ai",
+      "url": "https://36kr.com/",
       "published_at": "2026-02-23T08:00:00+08:00",
       "author": "36氪",
       "tags": ["腾讯", "大模型", "微信"]
@@ -105,7 +105,7 @@
       "title": "微服务架构演进的十个最佳实践",
       "summary": "本文总结了微服务架构演进过程中的十个关键最佳实践，包括服务拆分策略、数据一致性保障、可观测性建设等方面的经验分享。",
       "source": "InfoQ",
-      "url": "https://www.infoq.cn/topic/architecture",
+      "url": "https://www.infoq.com/",
       "published_at": "2026-02-23T11:00:00+08:00",
       "author": "InfoQ",
       "tags": ["微服务", "架构", "最佳实践"]
@@ -115,7 +115,7 @@
       "title": "Kubernetes 1.30发布：引入原生sidecar容器支持",
       "summary": "Kubernetes 1.30版本正式发布，最引人注目的新功能是原生sidecar容器支持，解决了长期以来sidecar容器的生命周期管理问题。",
       "source": "InfoQ",
-      "url": "https://www.infoq.cn/topic/kubernetes",
+      "url": "https://www.infoq.com/",
       "published_at": "2026-02-23T10:30:00+08:00",
       "author": "InfoQ",
       "tags": ["kubernetes", "容器", "云原生"]
@@ -125,7 +125,7 @@
       "title": "GraphQL vs REST：2024年的技术选型指南",
       "summary": "深入对比GraphQL和REST在2024年的技术选型，从性能、开发体验、生态系统等多个维度分析两种API设计范式的优劣。",
       "source": "InfoQ",
-      "url": "https://www.infoq.cn/topic/architecture",
+      "url": "https://www.infoq.com/",
       "published_at": "2026-02-23T10:00:00+08:00",
       "author": "InfoQ",
       "tags": ["graphql", "rest", "api"]
@@ -135,7 +135,7 @@
       "title": "云原生安全：零信任架构实战指南",
       "summary": "详细介绍如何在云原生环境中实施零信任安全架构，包括身份认证、服务网格安全、密钥管理等关键组件的实现方案。",
       "source": "InfoQ",
-      "url": "https://www.infoq.cn/topic/security",
+      "url": "https://www.infoq.com/",
       "published_at": "2026-02-23T09:30:00+08:00",
       "author": "InfoQ",
       "tags": ["安全", "零信任", "云原生"]
@@ -145,7 +145,7 @@
       "title": "React Server Components深度解析",
       "summary": "全面解析React Server Components的工作原理、性能优势和最佳实践，帮助开发者理解这一革命性的React新特性。",
       "source": "InfoQ",
-      "url": "https://www.infoq.cn/topic/frontend",
+      "url": "https://www.infoq.com/",
       "published_at": "2026-02-23T09:00:00+08:00",
       "author": "InfoQ",
       "tags": ["react", "前端", "服务端渲染"]
